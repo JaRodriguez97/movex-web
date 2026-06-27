@@ -50,20 +50,52 @@
 .text-headline-md { font-size: 32px !important; line-height: 1.3 !important; font-weight: 600 !important; }
 
 .font-display-lg { font-family: 'Montserrat', sans-serif !important; }
-.text-display-lg { font-size: 72px !important; line-height: 1.1 !important; letter-spacing: -0.04em !important; font-weight: 700 !important; }
+.text-display-lg {
+  font-size: 36px !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.02em !important;
+  font-weight: 700 !important;
+  @media (min-width: 768px) {
+    font-size: 72px !important;
+    line-height: 1.1 !important;
+    letter-spacing: -0.04em !important;
+  }
+}
 
-.text-display-lg-mobile { font-size: 40px !important; line-height: 1.2 !important; letter-spacing: -0.02em !important; font-weight: 700 !important; }
+.text-display-lg-mobile { font-size: 36px !important; line-height: 1.2 !important; letter-spacing: -0.02em !important; font-weight: 700 !important; }
 
 .font-label-sm { font-family: 'Montserrat', sans-serif !important; }
 .text-label-sm { font-size: 12px !important; line-height: 1 !important; letter-spacing: 0.1em !important; font-weight: 600 !important; }
 
 .font-body-lg { font-family: 'Montserrat', sans-serif !important; }
-.text-body-lg { font-size: 18px !important; line-height: 1.6 !important; font-weight: 400 !important; }
+.text-body-lg {
+  font-size: 16px !important;
+  line-height: 1.5 !important;
+  font-weight: 400 !important;
+  @media (min-width: 768px) {
+    font-size: 18px !important;
+    line-height: 1.6 !important;
+  }
+}
 
 // Tamaños y márgenes locales
 .max-w-container-max { max-width: 1280px !important; }
-.px-margin-desktop { padding-left: 80px !important; padding-right: 80px !important; }
-.py-section-gap { padding-top: 120px !important; padding-bottom: 120px !important; }
+.px-margin-desktop {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  @media (min-width: 768px) {
+    padding-left: 80px !important;
+    padding-right: 80px !important;
+  }
+}
+.py-section-gap {
+  padding-top: 60px !important;
+  padding-bottom: 60px !important;
+  @media (min-width: 768px) {
+    padding-top: 120px !important;
+    padding-bottom: 120px !important;
+  }
+}
 .gap-gutter { gap: 24px !important; }
 .gap-bento-gap { gap: 16px !important; }
 .px-margin-mobile { padding-left: 20px !important; padding-right: 20px !important; }

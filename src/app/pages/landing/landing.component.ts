@@ -1,16 +1,21 @@
 import { Component, AfterViewInit, OnDestroy, HostListener, Inject, PLATFORM_ID } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { isPlatformBrowser } from '@angular/common';
+import { isPlatformBrowser, CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-landing',
   templateUrl: './landing.component.html',
   styleUrls: ['./landing.component.scss'],
   standalone: true,
-  imports: [RouterLink]
+  imports: [RouterLink, CommonModule]
 })
 export class LandingComponent implements AfterViewInit, OnDestroy {
   private observer: IntersectionObserver | null = null;
+  isMobileMenuOpen = false;
+
+  toggleMobileMenu() {
+    this.isMobileMenuOpen = !this.isMobileMenuOpen;
+  }
 
   constructor(@Inject(PLATFORM_ID) private platformId: Object) { }
 

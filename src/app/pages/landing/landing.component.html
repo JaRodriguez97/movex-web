@@ -21,8 +21,24 @@
         class="bg-primary text-on-primary px-8 py-2.5 rounded-full font-bold active:scale-95 transition-transform">
         Solicitar
       </button>
+      <button type="button" (click)="toggleMobileMenu()" class="block md:hidden text-white focus:outline-none" aria-label="Toggle Menu">
+        <span class="material-symbols-outlined text-2xl flex items-center justify-center">
+          {{ isMobileMenuOpen ? 'close' : 'menu' }}
+        </span>
+      </button>
     </div>
   </nav>
+  <!-- Mobile drop-down menu -->
+  <div *ngIf="isMobileMenuOpen" class="md:hidden bg-background/95 backdrop-blur-xl border-b border-white/10 px-6 py-4 space-y-4">
+    <a class="block text-primary font-bold font-body-md" href="#" (click)="toggleMobileMenu()">Servicios</a>
+    <a class="block text-on-surface-variant hover:text-primary font-body-md" href="#" (click)="toggleMobileMenu()">Conducir</a>
+    <a class="block text-on-surface-variant hover:text-primary font-body-md" href="#" (click)="toggleMobileMenu()">Nosotros</a>
+    <a class="block text-on-surface-variant hover:text-primary font-body-md" href="#" (click)="toggleMobileMenu()">Soporte</a>
+    <hr class="border-white/10">
+    <button class="w-full text-left text-primary font-body-md py-2" (click)="toggleMobileMenu()">
+      Registrarse
+    </button>
+  </div>
 </header>
 <main>
   <!-- Section 1: HERO -->
@@ -66,7 +82,7 @@
       <div class="relative mt-12 lg:mt-0">
         <div
           class="glass-card rounded-3xl p-4 transform rotate-3 shadow-2xl relative z-20 transition-all duration-700 opacity-100 translate-y-0">
-          <img class="rounded-2xl w-full h-[500px] object-cover"
+          <img class="rounded-2xl w-full h-[300px] sm:h-[400px] md:h-[500px] object-cover"
             data-alt="A high-fidelity smartphone mockup displaying a sleek mobile application interface for a logistics and delivery service. The screen shows a dark-mode UI with vibrant teal map markers and a real-time tracking dashboard. The phone is held in a minimalist, tech-oriented setting with soft ambient lighting and ethereal glassmorphism elements in the background, reinforcing a premium, high-speed technological brand identity."
             src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNcpe5tsGJeBu96GnU2BbwOKuf5ciCNxs0d7ReZ0rkRnaACmzBKvD4PcXgZ_VYnt50fWdyyeYF_NdrHn_NHophPks9aCtbY7wqSNUpcSIkRpGNcCWb8waCLeG0UsWEeMf4OEypsh9cxtWmxTZqxikLqhQebIRlQZBk9AkOSSgbMr3YxsUtddAGOpTPuA7zuq-Vr7f2XkGP0b5FEL3-0juClPgBWkYhD3r4x5G-1Zdsk0vI0-rLHjYwCYc4jwFHTvoc-P68SAXLW31R" />
         </div>
@@ -145,10 +161,10 @@
   <!-- Section 3: BENTO GRID BENEFITS -->
   <section class="py-section-gap bg-surface-container-low">
     <div class="max-w-container-max mx-auto px-margin-desktop">
-      <div class="grid grid-cols-12 gap-bento-gap auto-rows-[250px]">
+      <div class="grid grid-cols-12 gap-bento-gap auto-rows-auto md:auto-rows-[250px]">
         <!-- Safety Card -->
         <div
-          class="col-span-12 md:col-span-8 lg:col-span-8 glass-card rounded-3xl p-10 overflow-hidden relative group transition-all duration-700 opacity-100 translate-y-0">
+          class="col-span-12 md:col-span-8 lg:col-span-8 glass-card rounded-3xl p-6 md:p-10 overflow-hidden relative group min-h-[250px] transition-all duration-700 opacity-100 translate-y-0">
           <div class="relative z-10 max-w-md">
             <span class="material-symbols-outlined text-primary-fixed-dim text-5xl mb-6">shield</span>
             <h3 class="font-headline-lg text-headline-lg !text-3xl mb-4">
@@ -166,7 +182,7 @@
         </div>
         <!-- Flexible Earnings -->
         <div
-          class="col-span-12 md:col-span-4 lg:col-span-4 glass-card rounded-3xl p-10 flex flex-col justify-end relative overflow-hidden transition-all duration-700 opacity-100 translate-y-0">
+          class="col-span-12 md:col-span-4 lg:col-span-4 glass-card rounded-3xl p-6 md:p-10 flex flex-col justify-end relative overflow-hidden min-h-[200px] transition-all duration-700 opacity-100 translate-y-0">
           <div class="relative z-10">
             <h3 class="font-headline-md text-headline-md !text-2xl mb-2">
               Ganancias Flexibles
@@ -181,7 +197,7 @@
         </div>
         <!-- Tracking -->
         <div
-          class="col-span-12 md:col-span-4 lg:col-span-4 glass-card rounded-3xl p-10 flex flex-col items-center justify-center text-center transition-all duration-700 opacity-100 translate-y-0">
+          class="col-span-12 md:col-span-4 lg:col-span-4 glass-card rounded-3xl p-6 md:p-10 flex flex-col items-center justify-center text-center min-h-[200px] transition-all duration-700 opacity-100 translate-y-0">
           <span class="material-symbols-outlined text-primary-fixed-dim text-6xl mb-6 animate-pulse">radar</span>
           <h3 class="font-headline-md text-headline-md !text-2xl mb-2">
             Seguimiento Real-Time
@@ -192,7 +208,7 @@
         </div>
         <!-- Multiple Services -->
         <div
-          class="col-span-12 md:col-span-8 lg:col-span-8 glass-card rounded-3xl p-10 flex items-center gap-8 overflow-hidden relative transition-all duration-700 opacity-100 translate-y-0">
+          class="col-span-12 md:col-span-8 lg:col-span-8 glass-card rounded-3xl p-6 md:p-10 flex items-center gap-8 overflow-hidden relative min-h-[250px] transition-all duration-700 opacity-100 translate-y-0">
           <div class="z-10 w-full md:w-1/2">
             <h3 class="font-headline-lg text-headline-lg !text-3xl mb-4">
               Múltiples Servicios
@@ -278,7 +294,7 @@
           </li>
         </ul>
         <button
-          class="glass-card text-primary px-8 py-3 rounded-full font-bold active:scale-95 transition-transform transition-all duration-700 opacity-100 translate-y-0">
+          class="glass-card text-primary px-8 py-3 rounded-full font-bold active:scale-95 transition-all duration-700 opacity-100 translate-y-0">
           Registrarme como Conductor
         </button>
       </div>
@@ -438,7 +454,7 @@
           Solicitar Servicio
         </button>
         <button
-          class="glass-card text-primary px-12 py-5 rounded-full font-bold text-xl border-white/20 active:scale-95 transition-transform flex items-center justify-center gap-3 transition-all duration-700 opacity-100 translate-y-0">
+          class="glass-card text-primary px-12 py-5 rounded-full font-bold text-xl border-white/20 active:scale-95 flex items-center justify-center gap-3 transition-all duration-700 opacity-100 translate-y-0">
           <span class="material-symbols-outlined">person_add</span>
           Ser Conductor
         </button>
@@ -448,8 +464,8 @@
 </main>
 <!-- Footer -->
 <footer class="bg-background w-full py-section-gap border-t border-outline-variant">
-  <div class="grid grid-cols-2 md:grid-cols-4 gap-bento-gap max-w-container-max mx-auto px-margin-desktop">
-    <div class="col-span-2 md:col-span-1 space-y-6">
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-bento-gap max-w-container-max mx-auto px-margin-desktop">
+    <div class="sm:col-span-2 md:col-span-1 space-y-6">
       <div class="font-headline-md text-headline-md font-bold text-primary">
         MOVEX
       </div>
@@ -495,10 +511,10 @@
     <div class="space-y-4">
       <h5 class="font-bold text-primary">Síguenos</h5>
       <div class="flex gap-4">
-        <a class="w-10 h-10 rounded-full glass-card flex items-center justify-center hover:bg-white/10 transition-colors transition-all duration-700 opacity-100 translate-y-0"
+        <a class="w-10 h-10 rounded-full glass-card flex items-center justify-center hover:bg-white/10 transition-all duration-700 opacity-100 translate-y-0"
           routerLink="/"><span
             class="material-symbols-outlined text-sm hover:text-[#C5F6ED] transition-colors">camera</span></a>
-        <a class="w-10 h-10 rounded-full glass-card flex items-center justify-center hover:bg-white/10 transition-colors transition-all duration-700 opacity-100 translate-y-0"
+        <a class="w-10 h-10 rounded-full glass-card flex items-center justify-center hover:bg-white/10 transition-all duration-700 opacity-100 translate-y-0"
           routerLink="/"><span
             class="material-symbols-outlined text-sm hover:text-[#C5F6ED] transition-colors">music_note</span></a>
       </div>
