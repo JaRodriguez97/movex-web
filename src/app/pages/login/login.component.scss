@@ -1,0 +1,69 @@
+:host {
+  display: block;
+  background-color: #121415;
+  color: #e2e2e3;
+  font-family: 'Montserrat', sans-serif;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+// Glassmorphism Card
+.glass-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+// Interactive Gradient Mesh
+.gradient-mesh {
+  background:
+    radial-gradient(
+      at 50% 50%,
+      rgba(197, 246, 237, 0.12) 0%,
+      transparent 50%
+    ),
+    radial-gradient(at 100% 100%, rgba(0, 0, 0, 1) 0%, transparent 50%);
+  transition: background 0.3s ease-out;
+}
+
+// Custom animations
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+// Accent Colors and Utilities matching landing design system
+.text-primary { color: #ffffff !important; }
+.bg-primary { background-color: #ffffff !important; }
+.text-on-primary { color: #013732 !important; }
+.text-primary-fixed-dim { color: #a0d0c7 !important; }
+.bg-primary-fixed-dim\/5 { background-color: rgba(160, 208, 199, 0.05) !important; }
+.bg-primary-fixed-dim\/10 { background-color: rgba(160, 208, 199, 0.1) !important; }
+.border-primary-fixed-dim\/80:focus { border-color: rgba(160, 208, 199, 0.8) !important; }
+.text-on-surface-variant { color: #c0c8c6 !important; }
+.hover\:text-primary:hover { color: #ffffff !important; }
+
+.font-body-md { font-family: 'Montserrat', sans-serif !important; }
+.text-body-md { font-size: 16px !important; line-height: 1.6 !important; font-weight: 400 !important; }
+.font-headline-md { font-family: 'Montserrat', sans-serif !important; }
+.text-headline-md { font-size: 32px !important; line-height: 1.3 !important; font-weight: 600 !important; }
+
+// Checkbox custom styling to fit premium dark theme
+input[type="checkbox"] {
+  accent-color: #a0d0c7;
+  &:focus {
+    box-shadow: none;
+  }
+}

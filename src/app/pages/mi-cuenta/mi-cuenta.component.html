@@ -1,0 +1,164 @@
+<!-- Profile Settings View -->
+<!-- TopAppBar Anchor -->
+<header class="fixed top-0 right-0 left-64 h-16 bg-surface/40 backdrop-blur-lg border-b border-outline-variant/20 flex justify-between items-center px-container-margin z-40 transition-all duration-300">
+<div class="flex items-center gap-4">
+<h2 class="font-headline-md text-headline-md font-black text-on-surface">Mi Perfil</h2>
+</div>
+<div class="flex items-center gap-stack-md">
+<button class="p-2 hover:bg-surface-variant/30 rounded-full transition-all duration-300">
+<span class="material-symbols-outlined text-primary" data-icon="notifications">notifications</span>
+</button>
+<div class="h-8 w-px bg-outline-variant/30 mx-2"></div>
+<div class="flex items-center gap-3">
+<span class="font-body-md text-body-md text-on-surface-variant">Ricardo Sánchez</span>
+<div class="w-8 h-8 rounded-full bg-primary/20 border border-primary/30 overflow-hidden">
+<img alt="User" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5SC1VLzuA9IzcXhcb6nsYr65jGb-KuIlImfaXZb777evW0_BdIm98lSB-mv703gERbZXqSfFu2-WlgVXorljF8Twz3VHtZNXQuvFQ6psL58Xmi471wY3jrdtinrzmbjdzfZ_6SE-_SHXZtSy1hG7b-kuf5J5GJrKoEEnHZmOCyG7CDVft0nF_jdIcaofgyK9_BSfD2XmmQ49EovjJyLRw9TirWiSeMxw3LYgzwddYqDpIXkFfIhaKilY78O0Sf_AbVSTa2q7wl6-3"/>
+</div>
+</div>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<div class="mt-16 p-container-margin min-h-screen">
+<div class="max-w-6xl mx-auto grid grid-cols-12 gap-gutter pb-stack-lg">
+<!-- Left Column: Personal Info & Security -->
+<div class="col-span-12 lg:col-span-8 flex flex-col gap-gutter">
+<!-- Personal Information Section -->
+<section class="glass-panel p-panel-padding rounded-xl">
+<div class="flex items-center gap-4 mb-stack-lg">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="account_circle">account_circle</span>
+<h3 class="font-headline-md text-headline-md">Información Personal</h3>
+</div>
+<div class="flex flex-col md:flex-row gap-stack-lg items-start">
+<!-- Avatar Upload -->
+<div class="flex flex-col items-center gap-stack-sm w-full md:w-1/3">
+<div class="relative group">
+<div class="w-32 h-32 rounded-full border-2 border-dashed border-outline-variant flex items-center justify-center overflow-hidden bg-surface-container-low transition-all duration-300 group-hover:border-primary">
+<img alt="Avatar" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5SC1VLzuA9IzcXhcb6nsYr65jGb-KuIlImfaXZb777evW0_BdIm98lSB-mv703gERbZXqSfFu2-WlgVXorljF8Twz3VHtZNXQuvFQ6psL58Xmi471wY3jrdtinrzmbjdzfZ_6SE-_SHXZtSy1hG7b-kuf5J5GJrKoEEnHZmOCyG7CDVft0nF_jdIcaofgyK9_BSfD2XmmQ49EovjJyLRw9TirWiSeMxw3LYgzwddYqDpIXkFfIhaKilY78O0Sf_AbVSTa2q7wl6-3"/>
+<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300 cursor-pointer">
+<span class="material-symbols-outlined text-white text-2xl" data-icon="photo_camera">photo_camera</span>
+</div>
+</div>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant text-center">Cambiar foto de perfil</p>
+</div>
+<!-- Personal Details Fields -->
+<div class="flex-1 grid grid-cols-1 md:grid-cols-2 gap-stack-md w-full">
+<div class="flex flex-col gap-2">
+<label class="font-label-lg text-label-lg text-on-surface-variant">Nombre Completo</label>
+<input class="glass-input p-stack-sm font-body-md text-body-md text-on-surface" type="text" value="Ricardo Alberto Sánchez"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-lg text-label-lg text-on-surface-variant">Correo Electrónico</label>
+<input class="glass-input p-stack-sm font-body-md text-body-md text-on-surface" type="email" value="r.sanchez&#64;movex.co"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-lg text-label-lg text-on-surface-variant">Teléfono</label>
+<input class="glass-input p-stack-sm font-body-md text-body-md text-on-surface" type="text" value="+57 312 456 7890"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-lg text-label-lg text-on-surface-variant">Rol Administrativo</label>
+<input class="glass-input p-stack-sm font-body-md text-body-md text-on-surface-variant/50 cursor-not-allowed" disabled="" type="text" value="Master Control (Super Admin)"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Security Section -->
+<section class="glass-panel p-panel-padding rounded-xl">
+<div class="flex items-center gap-4 mb-stack-lg">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="shield">shield</span>
+<h3 class="font-headline-md text-headline-md">Seguridad</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-stack-md">
+<div class="flex flex-col gap-2">
+<label class="font-label-lg text-label-lg text-on-surface-variant">Contraseña Actual</label>
+<input class="glass-input p-stack-sm font-body-md text-body-md text-on-surface" placeholder="••••••••" type="password"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-lg text-label-lg text-on-surface-variant">Nueva Contraseña</label>
+<input class="glass-input p-stack-sm font-body-md text-body-md text-on-surface" placeholder="Mínimo 8 carac." type="password"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-lg text-label-lg text-on-surface-variant">Confirmar Nueva</label>
+<input class="glass-input p-stack-sm font-body-md text-body-md text-on-surface" placeholder="••••••••" type="password"/>
+</div>
+</div>
+</section>
+<!-- Form Actions -->
+<div class="flex items-center justify-end gap-stack-md mt-4">
+<button class="px-8 py-3 rounded-lg font-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-variant/20 transition-all">Cancelar</button>
+<button class="bg-primary text-on-primary px-10 py-3 rounded-lg font-label-lg hover:shadow-lg hover:shadow-primary/20 transition-all flex items-center gap-2" id="save-btn">
+<span class="material-symbols-outlined text-xl" data-icon="save">save</span>
+                    Guardar Cambios
+                </button>
+</div>
+</div>
+<!-- Right Column: Preferences & Sessions -->
+<div class="col-span-12 lg:col-span-4 flex flex-col gap-gutter">
+<!-- Preferences Section -->
+<section class="glass-panel p-panel-padding rounded-xl">
+<div class="flex items-center gap-4 mb-stack-lg">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="settings_suggest">settings_suggest</span>
+<h3 class="font-headline-md text-headline-md text-[20px]">Preferencias</h3>
+</div>
+<div class="space-y-stack-md">
+<div class="flex flex-col gap-2">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Idioma</label>
+<select class="glass-input p-stack-sm font-body-md text-body-md text-on-surface bg-surface-container w-full">
+<option selected="">Español (CO)</option>
+<option>English (US)</option>
+</select>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Zona Horaria</label>
+<select class="glass-input p-stack-sm font-body-md text-body-md text-on-surface bg-surface-container w-full">
+<option selected="">Bogotá (GMT-5)</option>
+<option>UTC (Global)</option>
+</select>
+</div>
+<div class="pt-4 border-t border-outline-variant/20">
+<p class="font-label-sm text-label-sm text-on-surface-variant mb-4 uppercase tracking-wider">Alertas Personales</p>
+<div class="space-y-4">
+<label class="flex items-center justify-between cursor-pointer group">
+<span class="font-body-sm text-body-sm text-on-surface-variant group-hover:text-on-surface transition-colors">Notificaciones de inicio de sesión</span>
+<input checked="" class="w-5 h-5 accent-primary bg-surface border-outline-variant rounded" type="checkbox"/>
+</label>
+<label class="flex items-center justify-between cursor-pointer group">
+<span class="font-body-sm text-body-sm text-on-surface-variant group-hover:text-on-surface transition-colors">Alertas de seguridad de mi cuenta</span>
+<input checked="" class="w-5 h-5 accent-primary bg-surface border-outline-variant rounded" type="checkbox"/>
+</label>
+</div>
+</div>
+</div>
+</section>
+<!-- Active Sessions Section -->
+<section class="glass-panel p-panel-padding rounded-xl">
+<div class="flex items-center gap-4 mb-stack-lg">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="devices">devices</span>
+<h3 class="font-headline-md text-headline-md text-[20px]">Historial de Sesión</h3>
+</div>
+<div class="space-y-4">
+<div class="flex items-start gap-4 p-3 rounded-lg bg-primary/5 border border-primary/10">
+<span class="material-symbols-outlined text-primary" data-icon="laptop_mac">laptop_mac</span>
+<div>
+<p class="font-label-lg text-label-lg text-on-surface">MacBook Pro - Chrome</p>
+<p class="text-[11px] text-on-surface-variant">Pasto, Nariño • Activo ahora</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-3 rounded-lg hover:bg-surface-variant/10 transition-colors">
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="smartphone">smartphone</span>
+<div>
+<p class="font-label-lg text-label-lg text-on-surface">iPhone 14 Pro - App</p>
+<p class="text-[11px] text-on-surface-variant">Bogotá • Hace 3 horas</p>
+</div>
+</div>
+<button class="w-full text-center py-2 text-on-surface-variant hover:text-on-surface font-label-sm transition-colors border-t border-outline-variant/10 mt-2 pt-4">Cerrar otras sesiones</button>
+</div>
+</section>
+</div>
+</div>
+</div>
+<!-- Toast Notification -->
+<div class="fixed bottom-8 right-8 glass-panel px-6 py-4 rounded-xl flex items-center gap-3 transform translate-y-32 transition-transform duration-500 z-50 border-primary/50" id="toast">
+<span class="material-symbols-outlined text-primary" data-icon="check_circle">check_circle</span>
+<p class="font-label-lg text-label-lg">Perfil actualizado correctamente</p>
+</div>

@@ -1,0 +1,217 @@
+<div class="flex-1 flex flex-col h-screen overflow-hidden">
+<!-- TopNavBar (Authority: JSON) -->
+<header class="flex justify-between items-center px-8 h-16 w-full sticky top-0 z-40 bg-zinc-950/40 backdrop-blur-lg border-b border-zinc-800/50 font-inter text-sm antialiased">
+<div class="flex items-center gap-6">
+<span class="text-xl font-black tracking-tighter text-white uppercase">Dashboard</span>
+<div class="relative group">
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 text-zinc-400 hover:bg-white/10 transition-colors duration-200 rounded-lg active:scale-95">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<div class="h-8 w-8 rounded-full bg-zinc-800 overflow-hidden ml-2 border border-white/10">
+<img alt="Administrator Profile" data-alt="A professional close-up portrait of a corporate male administrator in a dark, minimalist office environment. The lighting is moody and sophisticated with cool blue and neutral grey tones. He is wearing a tailored charcoal suit, projecting authority and precision. The overall aesthetic is clean and high-end, matching a dark-mode logistics software interface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZ_pUh7eLxOjWiXP7JXwp52prj0NQvwBTzPnZRiqIHkjwFpGQ0aQFx19isZl4Q7dgn9qhtdu011J6d__1HhwdveXLnhJHSjBqfZRXW_7SJxGvAMwmsTM4fREwRrOTdIM6O__YHIwmfIiK0f8a8e4iON4Mrf5v5aF3ukyRLm7XgEE3xM3YNkHUC3sIa7sWzGG2-xllk5A1PvqNdp9yqKpgCW25BbkuBh2hh9teCcKamti6f--_DyQa9o0fyohpmZgTJ9nGN9qBvNy6X"/>
+</div>
+</div>
+</header>
+<!-- Canvas -->
+<div class="p-8 flex gap-8 h-[calc(100vh-64px)] overflow-hidden">
+<!-- Left Side: Reports Management -->
+<section class="flex-1 flex flex-col space-y-6 overflow-hidden">
+<div>
+<h1 class="font-headline-lg text-headline-lg text-white mb-1">Gestión de Recargas</h1>
+<p class="font-body-sm text-body-sm text-zinc-500">Validación y aprobación de reportes de pago de conductores</p>
+</div>
+<!-- Filters -->
+<div class="flex items-center gap-3">
+<button class="px-4 py-2 rounded-lg bg-primary text-zinc-950 font-label-lg text-label-lg font-bold">Pendientes (12)</button>
+<button class="px-4 py-2 rounded-lg glass-panel text-zinc-400 hover:text-white transition-colors font-label-lg text-label-lg">Aprobados</button>
+<button class="px-4 py-2 rounded-lg glass-panel text-zinc-400 hover:text-white transition-colors font-label-lg text-label-lg">Rechazados</button>
+</div>
+<!-- Scrollable List -->
+<div class="flex-1 overflow-y-auto custom-scrollbar pr-4 space-y-4">
+<!-- Report Card 1 -->
+<div class="glass-panel p-6 rounded-xl flex items-start gap-6 group hover:bg-white/[0.08] transition-all duration-300" style="transform: translateY(0px);">
+<div class="relative h-28 w-24 rounded-lg overflow-hidden border border-white/10 cursor-zoom-in">
+<img class="h-full w-full object-cover" data-alt="A detailed macro photograph of a Colombian bank transfer receipt showing amounts and transaction codes. The image is taken under clean, bright laboratory-style lighting to emphasize clarity and document verification. The background is a dark, non-reflective surface, maintaining the high-contrast professional aesthetic of a logistics application's back-office interface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB122Myv4pv4-wE_Hx6zFuPIwjMKq8_UJGVmYBvI2RC1jsyOThuiq6VaeXP78K4jo0uH9BI0D8Ad4R64y_Awpvk5FvNZU_HrJuK-T-qtx65TeFm8Qfza4Ge5FYNhiniC9sNMH_WPU2xWpMG6vrnrQcMOUp1YikpCDQXa53XUjZEJMC5BB0Od3jrtCNf8vLja6GluVp7cqVyHXmOtiPwmmMaWkLs_hY8OBjWNmq3AJAxjtqpJ7Mf6mzAEx4HdFIrCQR9Pv8OxzCR-QvK"/>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-white">zoom_in</span>
+</div>
+</div>
+<div class="flex-1 grid grid-cols-2 gap-4">
+<div class="space-y-1">
+<p class="text-zinc-500 font-label-sm text-label-sm uppercase tracking-wider">Conductor</p>
+<p class="text-white font-headline-md text-headline-md">Carlos Rodríguez</p>
+<p class="text-zinc-400 text-sm">PLACA: MVX-882</p>
+</div>
+<div class="space-y-1">
+<p class="text-zinc-500 font-label-sm text-label-sm uppercase tracking-wider">Monto</p>
+<p class="text-white font-headline-md text-headline-md">$250.000 COP</p>
+<div class="flex items-center gap-2 text-zinc-400">
+<span class="material-symbols-outlined text-xs">account_balance</span>
+<span class="text-xs">Bancolombia</span>
+</div>
+</div>
+<div class="col-span-2 flex items-center justify-between mt-4">
+<div class="flex items-center gap-4 text-zinc-500 text-xs">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">calendar_today</span> 24 Oct, 2023</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">schedule</span> 14:25 PM</span>
+</div>
+<div class="flex gap-2">
+<input class="bg-black/20 border border-white/5 rounded-lg px-3 py-1.5 text-xs w-48 focus:ring-1 focus:ring-primary/20 transition-all text-white" placeholder="Motivo de rechazo (opcional)" type="text"/>
+<button class="px-4 py-1.5 rounded-lg border border-error/30 text-error hover:bg-error/10 transition-all text-xs font-bold uppercase tracking-widest">Rechazar</button>
+<button class="px-6 py-1.5 rounded-lg bg-primary text-zinc-950 hover:bg-white transition-all text-xs font-extrabold uppercase tracking-widest">Aprobar</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Report Card 2 -->
+<div class="glass-panel p-6 rounded-xl flex items-start gap-6 group hover:bg-white/[0.08] transition-all duration-300" style="transform: translateY(0px);">
+<div class="relative h-28 w-24 rounded-lg overflow-hidden border border-white/10 cursor-zoom-in">
+<img class="h-full w-full object-cover" data-alt="A smartphone screen displaying a digital payment confirmation from a popular fintech app like Nequi. The digital interface is sharp, glowing against a dimly lit background. The lighting is atmospheric, using soft gradients of purple and black to highlight the digital transaction details. Professional and modern visual style for financial data verification." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfxS_EZEkM3_IBD2DaMaA-gdfSvG5WdNVbU5C07Jz5-dYAKhOCDMsjk52OiTP_LnKZSgvQjznbEHACIhyRllmiSk9iuUaWYNbeIJ6eIGYqzO4rjkoU2Ei0BHrbVw62EpXF4cICqgJTGK5mPMJkLPdXDaSXWkcWlZFrbwYWe5g4EqYcaRPxIQuVfJZ0NVUyJ8R4zczCrXJIwFg5jaETqS2qoQhy5NCKqISjTGjG8WmHlcX6X_b18raEnVPjlFmAUQeWaURD0aNQXFsR"/>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-white">zoom_in</span>
+</div>
+</div>
+<div class="flex-1 grid grid-cols-2 gap-4">
+<div class="space-y-1">
+<p class="text-zinc-500 font-label-sm text-label-sm uppercase tracking-wider">Conductor</p>
+<p class="text-white font-headline-md text-headline-md">Marcela Giraldo</p>
+<p class="text-zinc-400 text-sm">PLACA: MVX-774</p>
+</div>
+<div class="space-y-1">
+<p class="text-zinc-500 font-label-sm text-label-sm uppercase tracking-wider">Monto</p>
+<p class="text-white font-headline-md text-headline-md">$120.000 COP</p>
+<div class="flex items-center gap-2 text-zinc-400">
+<span class="material-symbols-outlined text-xs">smartphone</span>
+<span class="text-xs">Nequi</span>
+</div>
+</div>
+<div class="col-span-2 flex items-center justify-between mt-4">
+<div class="flex items-center gap-4 text-zinc-500 text-xs">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">calendar_today</span> 24 Oct, 2023</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">schedule</span> 15:10 PM</span>
+</div>
+<div class="flex gap-2">
+<input class="bg-black/20 border border-white/5 rounded-lg px-3 py-1.5 text-xs w-48 focus:ring-1 focus:ring-primary/20 transition-all text-white" placeholder="Motivo de rechazo (opcional)" type="text"/>
+<button class="px-4 py-1.5 rounded-lg border border-error/30 text-error hover:bg-error/10 transition-all text-xs font-bold uppercase tracking-widest">Rechazar</button>
+<button class="px-6 py-1.5 rounded-lg bg-primary text-zinc-950 hover:bg-white transition-all text-xs font-extrabold uppercase tracking-widest">Aprobar</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Report Card 3 -->
+<div class="glass-panel p-6 rounded-xl flex items-start gap-6 group hover:bg-white/[0.08] transition-all duration-300 opacity-80" style="transform: translateY(0px);">
+<div class="relative h-28 w-24 rounded-lg overflow-hidden border border-white/10 cursor-zoom-in">
+<img class="h-full w-full object-cover grayscale group-hover:grayscale-0 transition-all" data-alt="A paper bank voucher from Davivienda on a clean marble surface. High-contrast lighting creates long, elegant shadows, emphasizing the texture of the paper and the printed ink. The color palette is strictly monochromatic, with subtle highlights that bring out the transaction date and value. The composition is balanced and professional." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAf-3-OubNj7_KQAiWtK06cVMp1cDp9V2mvuWmqQl8AL9Xaf0Z6gYDoN-W-cunUeRtE3i4Ih1oZWH526nWR0nA7KOKQUnwmbuWu8VrT9kv5j9pC52j_JIWgY-ExJ3IqtsH4JBrxvtKOV0hKqsoh-QvG_wcCFPthN_po89NlEBQwXVh8hC9Iv--UMtm4CtA3cG4zn_R29LhNNShkTP8u233LtTryOkbi-5jSfc9_PJUlcyEGK4BGIQ8_XJ6Op5k9UspJljAXlX6lj_sf"/>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-white">zoom_in</span>
+</div>
+</div>
+<div class="flex-1 grid grid-cols-2 gap-4">
+<div class="space-y-1">
+<p class="text-zinc-500 font-label-sm text-label-sm uppercase tracking-wider">Conductor</p>
+<p class="text-white font-headline-md text-headline-md">Jorge Eliécer</p>
+<p class="text-zinc-400 text-sm">PLACA: MVX-102</p>
+</div>
+<div class="space-y-1">
+<p class="text-zinc-500 font-label-sm text-label-sm uppercase tracking-wider">Monto</p>
+<p class="text-white font-headline-md text-headline-md">$500.000 COP</p>
+<div class="flex items-center gap-2 text-zinc-400">
+<span class="material-symbols-outlined text-xs">account_balance_wallet</span>
+<span class="text-xs">Daviplata</span>
+</div>
+</div>
+<div class="col-span-2 flex items-center justify-between mt-4">
+<div class="flex items-center gap-4 text-zinc-500 text-xs">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">calendar_today</span> 24 Oct, 2023</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">schedule</span> 15:45 PM</span>
+</div>
+<div class="flex gap-2">
+<input class="bg-black/20 border border-white/5 rounded-lg px-3 py-1.5 text-xs w-48 focus:ring-1 focus:ring-primary/20 transition-all text-white" placeholder="Motivo de rechazo (opcional)" type="text"/>
+<button class="px-4 py-1.5 rounded-lg border border-error/30 text-error hover:bg-error/10 transition-all text-xs font-bold uppercase tracking-widest">Rechazar</button>
+<button class="px-6 py-1.5 rounded-lg bg-primary text-zinc-950 hover:bg-white transition-all text-xs font-extrabold uppercase tracking-widest">Aprobar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Right Side: Stats Panel -->
+<aside class="w-80 flex flex-col space-y-6">
+<!-- Summary Card -->
+<div class="glass-panel p-6 rounded-2xl border-white/5 shadow-xl" style="transform: translateY(0px);">
+<h3 class="font-label-lg text-label-lg text-white mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-lg">analytics</span>
+                        Resumen del Día
+                    </h3>
+<div class="space-y-6">
+<div class="space-y-1">
+<p class="text-zinc-500 text-xs uppercase tracking-widest">Total Recaudado</p>
+<p class="text-white font-headline-lg text-headline-lg">$12.450.000</p>
+<p class="text-xs text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">trending_up</span>
+                                +12% vs ayer
+                            </p>
+</div>
+<div class="h-[1px] w-full bg-white/5"></div>
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-1">
+<p class="text-zinc-500 text-[10px] uppercase tracking-widest">Pendientes</p>
+<p class="text-white text-xl font-bold">12</p>
+</div>
+<div class="space-y-1">
+<p class="text-zinc-500 text-[10px] uppercase tracking-widest">Tiempo Prom.</p>
+<p class="text-white text-xl font-bold">8.4 min</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Active Banks -->
+<div class="glass-panel p-6 rounded-2xl border-white/5 flex-1" style="transform: translateY(0px);">
+<h3 class="font-label-lg text-label-lg text-white mb-4">Volumen por Banco</h3>
+<div class="space-y-4">
+<div class="space-y-2">
+<div class="flex justify-between text-xs mb-1">
+<span class="text-zinc-400">Bancolombia</span>
+<span class="text-white">65%</span>
+</div>
+<div class="w-full bg-white/5 h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full" style="width: 65%"></div>
+</div>
+</div>
+<div class="space-y-2">
+<div class="flex justify-between text-xs mb-1">
+<span class="text-zinc-400">Nequi</span>
+<span class="text-white">25%</span>
+</div>
+<div class="w-full bg-white/5 h-1.5 rounded-full overflow-hidden">
+<div class="bg-zinc-400 h-full" style="width: 25%"></div>
+</div>
+</div>
+<div class="space-y-2">
+<div class="flex justify-between text-xs mb-1">
+<span class="text-zinc-400">Daviplata</span>
+<span class="text-white">10%</span>
+</div>
+<div class="w-full bg-white/5 h-1.5 rounded-full overflow-hidden">
+<div class="bg-zinc-600 h-full" style="width: 10%"></div>
+</div>
+</div>
+</div>
+<div class="mt-8">
+<div class="p-4 rounded-xl bg-white/5 border border-white/5 text-center">
+<p class="text-zinc-500 text-xs mb-2 italic">Optimización de flujo</p>
+<p class="text-white text-xs leading-relaxed">El sistema sugiere revisar primero los montos mayores a $1M COP para mitigar riesgos.</p>
+</div>
+</div>
+</div>
+<!-- Footer branding / stats -->
+<div class="text-center pb-4">
+<p class="text-[10px] text-zinc-600 uppercase tracking-[0.2em]">MOVEX v1.0.0</p>
+</div>
+</aside>
+</div>
+</div>
+<!-- Micro-interaction Scripts -->

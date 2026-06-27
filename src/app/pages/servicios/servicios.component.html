@@ -1,0 +1,259 @@
+<!-- Top Navigation Bar -->
+<nav class="flex justify-between items-center px-8 h-16 top-0 z-40 bg-zinc-950/40 backdrop-blur-lg border-b border-white/10 left-64 fixed right-0">
+<div class="flex items-center gap-12">
+
+<div class="hidden md:flex items-center gap-1">
+
+<a class="text-primary bg-primary/10 font-inter text-sm font-semibold antialiased px-4 py-1.5 rounded-md border border-primary/20" routerLink="/live-monitoreo">Dashboard</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 text-zinc-400 hover:text-white transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">notifications</span>
+</button>
+<div class="h-8 w-8 rounded-full bg-zinc-800 border border-white/20 overflow-hidden ml-2 cursor-pointer hover:ring-2 hover:ring-primary/20 transition-all">
+<img alt="Administrator Profile" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZsJ7B_S34Ps20Tyg8TSSssgbyyGdGMTgnIuQAlrZsdxwaEP8d-wpNLr6al1YW41uGdpm9iaNstJY-sesUitCJ-UGUu2ncWB4e6ZT0rLSFGZ97YQGh1MVM8fXgC9Wskj0U2HJO6wj5ZBUpMcW6FHhjOaSo7DhM8I370e9sV7Ua39mdqwZF5vhPwWR7j6NmvdueWS8l3C42P5a7g6EA1IZcxDyO3IAEZ_OXuPmp4ouPkC8nF_Lc6sMmHosPVD4jYWqdPiu9mhY8eNHt">
+</div>
+</div>
+</nav>
+<div class="flex-grow p-8 overflow-y-auto h-screen pt-24 bg-primary-container text-on-surface">
+<!-- Quick Stats -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+<div class="glass-panel p-6 rounded-xl flex flex-col justify-between h-32 relative overflow-hidden group" style="border-color: rgba(147, 148, 149, 0.2);">
+<div class="flex justify-between items-start">
+<span class="text-zinc-400 font-label-lg text-label-lg">Servicios Activos</span>
+<span class="material-symbols-outlined text-zinc-500">conveyor_belt</span>
+</div>
+<div class="text-3xl font-headline-lg text-on-surface">42</div>
+<div class="absolute -right-4 -bottom-4 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-8xl">local_shipping</span>
+</div>
+</div>
+<div class="glass-panel p-6 rounded-xl flex flex-col justify-between h-32 relative overflow-hidden group" style="border-color: rgba(147, 148, 149, 0.2);">
+<div class="flex justify-between items-start">
+<span class="text-zinc-400 font-label-lg text-label-lg">Total Servicios Hoy</span>
+<span class="material-symbols-outlined text-zinc-500">today</span>
+</div>
+<div class="text-3xl font-headline-lg text-on-surface">158</div>
+<div class="absolute -right-4 -bottom-4 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-8xl">task_alt</span>
+</div>
+</div>
+<div class="glass-panel p-6 rounded-xl flex flex-col justify-between h-32 relative overflow-hidden group border-l-2 border-l-primary/40" style="border-color: rgba(147, 148, 149, 0.2);">
+<div class="flex justify-between items-start">
+<span class="text-zinc-400 font-label-lg text-label-lg">Ganancias Hoy (COP)</span>
+<span class="material-symbols-outlined text-zinc-500">payments</span>
+</div>
+<div class="text-2xl font-headline-lg text-on-surface">$4.250.000</div>
+<div class="absolute -right-4 -bottom-4 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-8xl">trending_up</span>
+</div>
+</div>
+<div class="glass-panel p-6 rounded-xl flex flex-col justify-between h-32 relative overflow-hidden group" style="border-color: rgba(147, 148, 149, 0.2);">
+<div class="flex justify-between items-start">
+<span class="text-zinc-400 font-label-lg text-label-lg">T. Promedio Entrega</span>
+<span class="material-symbols-outlined text-zinc-500">schedule</span>
+</div>
+<div class="text-3xl font-headline-lg text-on-surface">45m</div>
+<div class="absolute -right-4 -bottom-4 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-8xl">timer</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<!-- Real-time Map Section -->
+<div class="lg:col-span-2 space-y-6">
+<div class="glass-panel rounded-xl overflow-hidden flex flex-col h-[600px]" style="border-color: rgba(147, 148, 149, 0.2);">
+<div class="p-4 border-b border-white/10 flex justify-between items-center bg-zinc-950/20">
+<h2 class="font-headline-md text-headline-md flex items-center gap-2">
+<span class="material-symbols-outlined text-zinc-400">map</span>
+                                Mapa de Servicios Nariño
+                            </h2>
+<div class="flex gap-4 text-xs font-medium">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-blue-500 shadow-[0_0_8px_rgba(59,130,246,0.5)]"></span>
+<span class="">En tránsito</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-amber-500 shadow-[0_0_8px_rgba(245,158,11,0.5)]"></span>
+<span class="">Recogiendo</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary shadow-[0_0_8px_rgba(197,246,237,0.5)]"></span>
+<span class="">Finalizado</span>
+</div>
+</div>
+</div>
+<div class="flex-grow relative bg-zinc-900 group">
+<img class="w-full h-full object-cover opacity-50 grayscale transition-opacity duration-500 group-hover:opacity-60" data-alt="A high-contrast, dark satellite map visualization of the Nariño region in Colombia. The terrain is shown in deep charcoal and muted grays with faint glowing grid lines. Small, neon-colored pin indicators in blue, amber, and emerald are scattered across the map to represent active logistics routes. The overall mood is high-tech, precise, and data-driven, evoking a sophisticated control room atmosphere." data-location="Nariño, Colombia" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZG7Lr-8RuwYBRLzWNihtxOspZUQOPuikmv76c_Ny9A9q34on_24qf0Twm8vm2OkPaK5vtcb4guWKSwhmDQ2UEyBO-7lLXy5pfJMMV6JtDAlOz-Oyb3-ymD7zIv3ZBF-sVjxPy0zCHAEhlEFndSqSV66NH0VkGw-llU6dwigpe_8CLen3Wgt7kd6d5F2AA2NyrvkBEDdq0P2DvK-hsoNJJVN73d0EBpHs0nhHbHwFLY1jR8nC30cIhMj6yv88zWuDN2NaXJEpYCGjb">
+<!-- Animated Map Pins -->
+<div class="absolute top-[30%] left-[40%] animate-bounce">
+<div class="w-4 h-4 bg-blue-500 rounded-full border-2 border-white shadow-[0_0_15px_rgba(59,130,246,0.8)]"></div>
+</div>
+<div class="absolute top-[50%] left-[60%] animate-pulse">
+<div class="w-4 h-4 bg-amber-500 rounded-full border-2 border-white shadow-[0_0_15px_rgba(245,158,11,0.8)]"></div>
+</div>
+<div class="absolute top-[70%] left-[30%]">
+<div class="w-4 h-4 bg-primary rounded-full border-2 border-white shadow-[0_0_15px_rgba(197,246,237,0.8)]"></div>
+</div>
+<!-- Map Overlay Controls -->
+<div class="absolute bottom-6 left-6 flex flex-col gap-2">
+<button class="bg-zinc-950/80 p-2 rounded border border-white/10 hover:bg-zinc-900 transition-colors"><span class="material-symbols-outlined">add</span></button>
+<button class="bg-zinc-950/80 p-2 rounded border border-white/10 hover:bg-zinc-900 transition-colors"><span class="material-symbols-outlined">remove</span></button>
+</div>
+</div>
+</div>
+<!-- Current Services (Cards) -->
+<div class="space-y-4">
+<h2 class="font-headline-md text-headline-md px-2">Servicios Actuales</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Service Card 1 -->
+<div class="glass-panel p-5 rounded-xl transition-all hover:translate-y-[-4px] hover:border-primary/30 group" style="border-color: rgba(147, 148, 149, 0.2);">
+<div class="flex justify-between items-start mb-4">
+<div class="flex items-center gap-3">
+<div class="h-10 w-10 rounded-lg bg-zinc-800 border border-white/10 overflow-hidden">
+<img alt="Conductor Avatar" class="w-full h-full object-cover" data-alt="A portrait of a focused professional truck driver in a sleek logistics uniform. High-contrast lighting highlights his sharp features and professional demeanor. The setting is modern and clean with subtle metallic accents in the background. The color palette is composed of cool grays, deep blacks, and clean whites, embodying the precision of a top-tier delivery service." src="https://lh3.googleusercontent.com/aida-public/AB6AXuANuse-nUx7HTQn0v7FT36rNmasjtnh0EyNOGKDzcjDY2DpoKsTOSdSHAlHJD6KHMA50xczexfrMmCmX5zi9Hj6tDK0m2lP_4RhyLFzitv0VF5u12iUCq2y8yxnGm4sXT7pf_4gtY4OyVZYZmm8jVwsugDXR15MKu1V2rs2yC9aetwThTauJEV-dTx0AOtKvQUJ4KYefbr3W65He-SNZdM9Ucc1SWCKQEyyjmb8zYnJCqg7y7vDMnj1TaZ2APavlib6gYSdcUB_cCfM">
+</div>
+<div>
+<div class="font-bold text-on-surface">Carlos Mendoza</div>
+<div class="text-xs text-zinc-500 font-label-sm">ID: MVX-8902</div>
+</div>
+</div>
+<span class="px-2 py-1 bg-blue-500/10 text-blue-400 text-[10px] uppercase font-black rounded border border-blue-500/20">En Tránsito</span>
+</div>
+<div class="space-y-3 mb-4">
+<div class="flex items-center gap-2 text-sm">
+<span class="material-symbols-outlined text-zinc-500 text-lg">person</span>
+<span class="text-zinc-300">Cliente: Logística Norte S.A.S</span>
+</div>
+<div class="flex items-center gap-2 text-sm">
+<span class="material-symbols-outlined text-zinc-500 text-lg">route</span>
+<span class="text-zinc-300">Ruta Nariño</span>
+</div>
+</div>
+<div class="flex gap-2">
+<button class="flex-1 bg-primary text-on-primary py-2 rounded-lg text-xs font-bold hover:brightness-110 transition-all">Ver detalle</button>
+<button class="flex-1 border border-white/10 py-2 rounded-lg text-xs font-bold hover:bg-white/5 transition-colors">Contactar</button>
+</div>
+</div>
+<!-- Service Card 2 -->
+<div class="glass-panel p-5 rounded-xl transition-all hover:translate-y-[-4px] hover:border-primary/30 group">
+<div class="flex justify-between items-start mb-4">
+<div class="flex items-center gap-3">
+<div class="h-10 w-10 rounded-lg bg-zinc-800 border border-white/10 overflow-hidden">
+<img alt="Conductor Avatar" class="w-full h-full object-cover" data-alt="A portrait of a professional female driver in a logistics environment. She is wearing a modern uniform and exudes confidence and reliability. The background is a sophisticated distribution center with high-key, minimalist lighting. The aesthetic is clean and corporate, featuring a palette of monochromatic grays and deep blacks with silver metallic reflections." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAActdS1WPShhaWmMmeyiA21Q-3ySkyrzZX6zJQAhA8jRvgCS_BofTKXEC_6fzI9Nv-Uf8PX1KhEaPrMs7ra23bm42bmcwWmnU6NiD_qiz6qMbnhH0EHFzq79ENVw5mU3FSTMmfYKcrXGWYX60yEbgnG9UmtgWHJtnfrL1RH2sbcncwW4SL-x0_eFue2jOv6GSrpem9JJhe2hEgECfjfAKcULZVTcKFjGGs2_JuB4todNXAl0hYDflL7QFXlm-2VB510AOmKPzp_du2">
+</div>
+<div>
+<div class="font-bold text-on-surface">Elena Gómez</div>
+<div class="text-xs text-zinc-500 font-label-sm">ID: MVX-7241</div>
+</div>
+</div>
+<span class="px-2 py-1 bg-amber-500/10 text-amber-400 text-[10px] uppercase font-black rounded border border-amber-500/20">Recogiendo</span>
+</div>
+<div class="space-y-3 mb-4">
+<div class="flex items-center gap-2 text-sm">
+<span class="material-symbols-outlined text-zinc-500 text-lg">person</span>
+<span class="text-zinc-300">Cliente: Distribuidora Central</span>
+</div>
+<div class="flex items-center gap-2 text-sm">
+<span class="material-symbols-outlined text-zinc-500 text-lg">route</span>
+<span class="text-zinc-300">Ruta Nariño</span>
+</div>
+</div>
+<div class="flex gap-2">
+<button class="flex-1 bg-primary text-on-primary py-2 rounded-lg text-xs font-bold hover:brightness-110 transition-all">Ver detalle</button>
+<button class="flex-1 border border-white/10 py-2 rounded-lg text-xs font-bold hover:bg-white/5 transition-colors">Contactar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Service History Section -->
+<div class="space-y-6">
+<div class="glass-panel rounded-xl overflow-hidden flex flex-col h-full max-h-[1020px]" style="border-color: rgba(147, 148, 149, 0.2);">
+<div class="p-6 border-b border-white/10">
+<h2 class="font-headline-md text-headline-md">Historial de Servicios</h2>
+<p class="text-sm text-zinc-500 mt-1">Registros de actividades pasadas</p>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead class="bg-white/5 text-zinc-400 font-label-sm text-[10px] uppercase tracking-wider">
+<tr>
+<th class="px-6 py-3 border-b border-white/10">Fecha</th>
+<th class="px-6 py-3 border-b border-white/10">Conductor</th>
+<th class="px-6 py-3 border-b border-white/10">Monto</th>
+<th class="px-6 py-3 border-b border-white/10 text-right">Estado</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-white/5">
+<tr class="hover:bg-white/5 transition-colors">
+<td class="px-6 py-4 text-xs">24 Oct, 2023</td>
+<td class="px-6 py-4">
+<div class="text-xs font-bold">Andrés Rojas</div>
+</td>
+<td class="px-6 py-4 text-xs text-zinc-300">$125.000</td>
+<td class="px-6 py-4 text-right">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-primary/10 text-primary border border-primary/20 uppercase">Listo</span>
+</td>
+</tr>
+<tr class="hover:bg-white/5 transition-colors">
+<td class="px-6 py-4 text-xs">24 Oct, 2023</td>
+<td class="px-6 py-4">
+<div class="text-xs font-bold">Diana Prado</div>
+</td>
+<td class="px-6 py-4 text-xs text-zinc-300">$82.500</td>
+<td class="px-6 py-4 text-right">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-primary/10 text-primary border border-primary/20 uppercase">Listo</span>
+</td>
+</tr>
+<tr class="hover:bg-white/5 transition-colors">
+<td class="px-6 py-4 text-xs">23 Oct, 2023</td>
+<td class="px-6 py-4">
+<div class="text-xs font-bold">Jorge Ruiz</div>
+</td>
+<td class="px-6 py-4 text-xs text-zinc-300">$310.000</td>
+<td class="px-6 py-4 text-right">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-error/10 text-error border border-error/20 uppercase">Canc.</span>
+</td>
+</tr>
+<tr class="hover:bg-white/5 transition-colors">
+<td class="px-6 py-4 text-xs">23 Oct, 2023</td>
+<td class="px-6 py-4">
+<div class="text-xs font-bold">Marta Velazco</div>
+</td>
+<td class="px-6 py-4 text-xs text-zinc-300">$145.000</td>
+<td class="px-6 py-4 text-right">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-primary/10 text-primary border border-primary/20 uppercase">Listo</span>
+</td>
+</tr>
+<tr class="hover:bg-white/5 transition-colors">
+<td class="px-6 py-4 text-xs">22 Oct, 2023</td>
+<td class="px-6 py-4">
+<div class="text-xs font-bold">Samuel Ortiz</div>
+</td>
+<td class="px-6 py-4 text-xs text-zinc-300">$190.000</td>
+<td class="px-6 py-4 text-right">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-primary/10 text-primary border border-primary/20 uppercase">Listo</span>
+</td>
+</tr>
+<tr class="hover:bg-white/5 transition-colors">
+<td class="px-6 py-4 text-xs">22 Oct, 2023</td>
+<td class="px-6 py-4">
+<div class="text-xs font-bold">Raul Jimenez</div>
+</td>
+<td class="px-6 py-4 text-xs text-zinc-300">$95.000</td>
+<td class="px-6 py-4 text-right">
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-primary/10 text-primary border border-primary/20 uppercase">Listo</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="p-4 mt-auto border-t border-white/5">
+<button class="w-full py-2 bg-white/5 rounded-lg text-xs font-semibold hover:bg-white/10 transition-all">Exportar Reporte Mensual</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Floating Action Button - Supressed on this specific screen as per guidelines for Details/Management screens -->

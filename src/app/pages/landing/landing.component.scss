@@ -1,0 +1,95 @@
+:host {
+  display: block;
+  background-color: #121415;
+  color: #e2e2e3;
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+// Estilos Premium de index.html
+.glass-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.inner-glow {
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.1);
+}
+
+.bento-card-gradient {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(255, 255, 255, 0) 100-percent
+  );
+}
+
+.active-scale:active {
+  transform: scale(0.95);
+}
+
+.gradient-mesh {
+  background:
+    radial-gradient(
+      at 0% 0%,
+      rgba(197, 246, 237, 0.1) 0%,
+      transparent 50%
+    ),
+    radial-gradient(at 100% 100%, rgba(0, 0, 0, 1) 0%, transparent 50%);
+}
+
+// Fuentes e overrides locales de tipografía
+.font-body-md { font-family: 'Montserrat', sans-serif !important; }
+.text-body-md { font-size: 16px !important; line-height: 1.6 !important; font-weight: 400 !important; }
+
+.font-headline-md { font-family: 'Montserrat', sans-serif !important; }
+.text-headline-md { font-size: 32px !important; line-height: 1.3 !important; font-weight: 600 !important; }
+
+.font-display-lg { font-family: 'Montserrat', sans-serif !important; }
+.text-display-lg { font-size: 72px !important; line-height: 1.1 !important; letter-spacing: -0.04em !important; font-weight: 700 !important; }
+
+.text-display-lg-mobile { font-size: 40px !important; line-height: 1.2 !important; letter-spacing: -0.02em !important; font-weight: 700 !important; }
+
+.font-label-sm { font-family: 'Montserrat', sans-serif !important; }
+.text-label-sm { font-size: 12px !important; line-height: 1 !important; letter-spacing: 0.1em !important; font-weight: 600 !important; }
+
+.font-body-lg { font-family: 'Montserrat', sans-serif !important; }
+.text-body-lg { font-size: 18px !important; line-height: 1.6 !important; font-weight: 400 !important; }
+
+// Tamaños y márgenes locales
+.max-w-container-max { max-width: 1280px !important; }
+.px-margin-desktop { padding-left: 80px !important; padding-right: 80px !important; }
+.py-section-gap { padding-top: 120px !important; padding-bottom: 120px !important; }
+.gap-gutter { gap: 24px !important; }
+.gap-bento-gap { gap: 16px !important; }
+.px-margin-mobile { padding-left: 20px !important; padding-right: 20px !important; }
+
+// Overrides de colores para conservar la paleta de la Landing Page Premium
+.text-primary { color: #ffffff !important; }
+.bg-primary { background-color: #ffffff !important; }
+.hover\:bg-white\/90:hover { background-color: rgba(255, 255, 255, 0.9) !important; }
+.hover\:bg-white\/5:hover { background-color: rgba(255, 255, 255, 0.05) !important; }
+.hover\:bg-white\/10:hover { background-color: rgba(255, 255, 255, 0.1) !important; }
+.border-white\/20 { border-color: rgba(255, 255, 255, 0.2) !important; }
+.border-white\/10 { border-color: rgba(255, 255, 255, 0.1) !important; }
+.border-white\/5 { border-color: rgba(255, 255, 255, 0.05) !important; }
+.bg-white\/5 { background-color: rgba(255, 255, 255, 0.05) !important; }
+.text-on-primary { color: #013732 !important; }
+.text-primary-fixed-dim { color: #a0d0c7 !important; }
+.bg-primary-fixed-dim { background-color: #a0d0c7 !important; }
+.bg-primary-fixed-dim\/20 { background-color: rgba(160, 208, 199, 0.2) !important; }
+.bg-primary-fixed-dim\/5 { background-color: rgba(160, 208, 199, 0.05) !important; }
+.bg-primary-fixed-dim\/10 { background-color: rgba(160, 208, 199, 0.1) !important; }
+.text-on-surface-variant { color: #c0c8c6 !important; }
+.hover\:text-primary:hover { color: #ffffff !important; }
+.bg-background { background-color: #121415 !important; }
+.bg-surface { background-color: #121415 !important; }
+.bg-surface\/40 { background-color: rgba(18, 20, 21, 0.4) !important; }
+.bg-surface-container-low { background-color: #1a1c1d !important; }
+.bg-surface-container-lowest { background-color: #0c0e0f !important; }
+.border-outline-variant { border-color: #404847 !important; }
+.text-on-tertiary-container { color: #646468 !important; }

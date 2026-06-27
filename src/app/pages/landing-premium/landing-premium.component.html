@@ -1,0 +1,703 @@
+<!-- TopNavBar -->
+    <header
+      class="fixed top-0 w-full z-50 bg-surface/40 backdrop-blur-xl border-b border-white/10 shadow-sm"
+    >
+      <nav
+        class="flex justify-between items-center max-w-container-max mx-auto px-margin-desktop py-4"
+      >
+        <div
+          class="font-headline-md text-headline-md font-bold tracking-tighter text-primary"
+        >
+          MOVEX
+        </div>
+        <div class="hidden md:flex items-center gap-8">
+          <a
+            class="text-primary font-bold border-b-2 border-primary pb-1 font-body-md text-body-md"
+            href="#"
+            >Servicios</a
+          >
+          <a
+            class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-body-md text-body-md"
+            href="#"
+            >Conducir</a
+          >
+          <a
+            class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-body-md text-body-md"
+            href="#"
+            >Nosotros</a
+          >
+          <a
+            class="text-on-surface-variant hover:text-primary transition-colors duration-300 font-body-md text-body-md"
+            href="#"
+            >Soporte</a
+          >
+        </div>
+        <div class="flex items-center gap-4">
+          <button
+            class="hidden md:block text-primary hover:text-primary-container transition-colors font-body-md"
+          >
+            Registrarse
+          </button>
+          <button
+            class="bg-primary text-on-primary px-8 py-2.5 rounded-full font-bold active:scale-95 transition-transform"
+          >
+            Solicitar
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Section 1: HERO -->
+      <section
+        class="relative min-h-screen flex items-center pt-24 overflow-hidden"
+      >
+        <div
+          class="absolute inset-0 gradient-mesh z-0"
+          style="
+            background:
+              radial-gradient(
+                at 76.9531% 99.0856%,
+                rgba(197, 246, 237, 0.1) 0%,
+                transparent 50%
+              ),
+              radial-gradient(at 100% 100%, rgb(0, 0, 0) 0%, transparent 50%);
+          "
+        ></div>
+        <div
+          class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-gutter items-center relative z-10"
+        >
+          <div class="space-y-8">
+            <div
+              class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-card border-white/20 text-primary-fixed-dim font-label-sm text-label-sm uppercase tracking-widest transition-all duration-700 opacity-100 translate-y-0"
+            >
+              <span
+                class="w-2 h-2 bg-primary-fixed-dim rounded-full animate-pulse"
+              ></span>
+              Movilidad Inteligente
+            </div>
+            <h1
+              class="font-display-lg text-display-lg-mobile md:text-display-lg leading-tight"
+            >
+              Tu ciudad se mueve con
+              <span class="text-primary-fixed-dim">MOVEX</span>
+            </h1>
+            <p
+              class="font-body-lg text-body-lg text-on-surface-variant max-w-xl"
+            >
+              Experimenta la máxima velocidad y precisión en cada trayecto.
+              Entregas y traslados diseñados para el ritmo de la vida moderna.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <button
+                class="bg-primary text-on-primary px-10 py-4 rounded-full font-bold text-lg hover:bg-white/90 transition-all active:scale-95"
+              >
+                Solicitar Servicio
+              </button>
+              <button
+                class="glass-card text-primary px-10 py-4 rounded-full font-bold text-lg border-white/20 hover:bg-white/5 transition-all active:scale-95 duration-700 opacity-100 translate-y-0"
+              >
+                Quiero ser Conductor
+              </button>
+            </div>
+          </div>
+          <div class="relative mt-12 lg:mt-0">
+            <div
+              class="glass-card rounded-3xl p-4 transform rotate-3 shadow-2xl relative z-20 transition-all duration-700 opacity-100 translate-y-0"
+            >
+              <img
+                class="rounded-2xl w-full h-[500px] object-cover"
+                data-alt="A high-fidelity smartphone mockup displaying a sleek mobile application interface for a logistics and delivery service. The screen shows a dark-mode UI with vibrant teal map markers and a real-time tracking dashboard. The phone is held in a minimalist, tech-oriented setting with soft ambient lighting and ethereal glassmorphism elements in the background, reinforcing a premium, high-speed technological brand identity."
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNcpe5tsGJeBu96GnU2BbwOKuf5ciCNxs0d7ReZ0rkRnaACmzBKvD4PcXgZ_VYnt50fWdyyeYF_NdrHn_NHophPks9aCtbY7wqSNUpcSIkRpGNcCWb8waCLeG0UsWEeMf4OEypsh9cxtWmxTZqxikLqhQebIRlQZBk9AkOSSgbMr3YxsUtddAGOpTPuA7zuq-Vr7f2XkGP0b5FEL3-0juClPgBWkYhD3r4x5G-1Zdsk0vI0-rLHjYwCYc4jwFHTvoc-P68SAXLW31R"
+              />
+            </div>
+            <div
+              class="absolute -top-10 -right-10 w-64 h-64 bg-primary-fixed-dim/20 rounded-full blur-3xl"
+            ></div>
+          </div>
+        </div>
+      </section>
+      <!-- Section 2: HOW IT WORKS -->
+      <section class="py-section-gap relative">
+        <div class="max-w-container-max mx-auto px-margin-desktop">
+          <div class="text-center mb-16">
+            <h2 class="font-headline-lg text-headline-lg mb-4">
+              Flujo de Movimiento
+            </h2>
+            <p class="text-on-surface-variant">
+              Sencillo, rápido y transparente para todos.
+            </p>
+          </div>
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-bento-gap"
+          >
+            <!-- Steps -->
+            <div
+              class="glass-card p-8 rounded-3xl bento-card-gradient text-center space-y-4 transition-all duration-700 opacity-100 translate-y-0"
+            >
+              <div
+                class="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center mx-auto"
+              >
+                <span
+                  class="material-symbols-outlined text-primary-fixed-dim text-4xl"
+                  >location_on</span
+                >
+              </div>
+              <h3 class="font-headline-md text-headline-md !text-2xl">
+                Define Destino
+              </h3>
+              <p class="text-on-surface-variant text-sm">
+                Ingresa el origen y destino con un solo toque en nuestra app
+                intuitiva.
+              </p>
+            </div>
+            <div
+              class="glass-card p-8 rounded-3xl bento-card-gradient text-center space-y-4 transition-all duration-700 opacity-100 translate-y-0"
+            >
+              <div
+                class="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center mx-auto"
+              >
+                <span
+                  class="material-symbols-outlined text-primary-fixed-dim text-4xl"
+                  >touch_app</span
+                >
+              </div>
+              <h3 class="font-headline-md text-headline-md !text-2xl">
+                Elige Servicio
+              </h3>
+              <p class="text-on-surface-variant text-sm">
+                Selecciona entre entrega express, transporte premium o carga
+                pesada.
+              </p>
+            </div>
+            <div
+              class="glass-card p-8 rounded-3xl bento-card-gradient text-center space-y-4 transition-all duration-700 opacity-100 translate-y-0"
+            >
+              <div
+                class="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center mx-auto"
+              >
+                <span
+                  class="material-symbols-outlined text-primary-fixed-dim text-4xl"
+                  >route</span
+                >
+              </div>
+              <h3 class="font-headline-md text-headline-md !text-2xl">
+                Sigue en Vivo
+              </h3>
+              <p class="text-on-surface-variant text-sm">
+                Monitorea la ubicación exacta de tu conductor en tiempo real con
+                precisión GPS.
+              </p>
+            </div>
+            <div
+              class="glass-card p-8 rounded-3xl bento-card-gradient text-center space-y-4 transition-all duration-700 opacity-100 translate-y-0"
+            >
+              <div
+                class="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center mx-auto"
+              >
+                <span
+                  class="material-symbols-outlined text-primary-fixed-dim text-4xl"
+                  >star</span
+                >
+              </div>
+              <h3 class="font-headline-md text-headline-md !text-2xl">
+                Llega a Tiempo
+              </h3>
+              <p class="text-on-surface-variant text-sm">
+                Disfruta de la puntualidad y califica tu experiencia para
+                mejorar la red.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section 3: BENTO GRID BENEFITS -->
+      <section class="py-section-gap bg-surface-container-low">
+        <div class="max-w-container-max mx-auto px-margin-desktop">
+          <div class="grid grid-cols-12 gap-bento-gap auto-rows-[250px]">
+            <!-- Safety Card -->
+            <div
+              class="col-span-12 md:col-span-8 lg:col-span-8 glass-card rounded-3xl p-10 overflow-hidden relative group transition-all duration-700 opacity-100 translate-y-0"
+            >
+              <div class="relative z-10 max-w-md">
+                <span
+                  class="material-symbols-outlined text-primary-fixed-dim text-5xl mb-6"
+                  >shield</span
+                >
+                <h3 class="font-headline-lg text-headline-lg !text-3xl mb-4">
+                  Seguridad 24/7
+                </h3>
+                <p class="text-on-surface-variant">
+                  Protocolos de verificación biométrica y soporte en vivo
+                  durante cada viaje para tu tranquilidad total.
+                </p>
+              </div>
+              <img
+                class="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:scale-110 transition-transform duration-700"
+                data-alt="A futuristic monitoring center dashboard displayed on multiple high-resolution screens. The interface features complex data visualizations, glowing teal security status maps, and encrypted communication logs. The lighting is low and moody, characteristic of a high-tech operations room, with subtle reflections of the digital interface on polished dark surfaces."
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaB8CA_irwnqAYAduSx-fjeSEZliR0W3RVFXEjQSpyaRYYHKICKobb2GKY_52j9H-CnIeWchhOqbuJa-AbC2IwQM864UT9ILbqn86Kadh7FPWT6isXE6qk0Qmtp3BcI8yUCEnlUxq5w5HZEgagbYORQdOHf1HrVC305BmvYV726deRNySB7tncz-Qx0fDuSjSFLpPh3K4Soh3NqUzxBDd_QwUYUxTDkxM2duBSg4yPbqpaV_F0T4Hp0kWPcMAYfX-i0BfLK0w7CAdy"
+              />
+            </div>
+            <!-- Flexible Earnings -->
+            <div
+              class="col-span-12 md:col-span-4 lg:col-span-4 glass-card rounded-3xl p-10 flex flex-col justify-end relative overflow-hidden transition-all duration-700 opacity-100 translate-y-0"
+            >
+              <div class="relative z-10">
+                <h3 class="font-headline-md text-headline-md !text-2xl mb-2">
+                  Ganancias Flexibles
+                </h3>
+                <p class="text-on-surface-variant text-sm">
+                  Tú decides cuándo y cuánto ganar.
+                </p>
+              </div>
+              <div class="absolute top-8 right-8 text-primary-fixed-dim">
+                <span
+                  class="material-symbols-outlined text-6xl"
+                  style="font-variation-settings: &quot;FILL&quot; 1"
+                  >payments</span
+                >
+              </div>
+            </div>
+            <!-- Tracking -->
+            <div
+              class="col-span-12 md:col-span-4 lg:col-span-4 glass-card rounded-3xl p-10 flex flex-col items-center justify-center text-center transition-all duration-700 opacity-100 translate-y-0"
+            >
+              <span
+                class="material-symbols-outlined text-primary-fixed-dim text-6xl mb-6 animate-pulse"
+                >radar</span
+              >
+              <h3 class="font-headline-md text-headline-md !text-2xl mb-2">
+                Seguimiento Real-Time
+              </h3>
+              <p class="text-on-surface-variant text-sm">
+                Precisión de metros en cada movimiento.
+              </p>
+            </div>
+            <!-- Multiple Services -->
+            <div
+              class="col-span-12 md:col-span-8 lg:col-span-8 glass-card rounded-3xl p-10 flex items-center gap-8 overflow-hidden relative transition-all duration-700 opacity-100 translate-y-0"
+            >
+              <div class="z-10 w-full md:w-1/2">
+                <h3 class="font-headline-lg text-headline-lg !text-3xl mb-4">
+                  Múltiples Servicios
+                </h3>
+                <p class="text-on-surface-variant">
+                  Desde motocicletas rápidas hasta camiones de carga para
+                  grandes entregas empresariales.
+                </p>
+              </div>
+              <div class="hidden md:flex gap-4 z-10">
+                <div
+                  class="w-16 h-16 glass-card rounded-xl flex items-center justify-center transition-all duration-700 opacity-100 translate-y-0"
+                >
+                  <span class="material-symbols-outlined">electric_moped</span>
+                </div>
+                <div
+                  class="w-16 h-16 glass-card rounded-xl flex items-center justify-center transition-all duration-700 opacity-100 translate-y-0"
+                >
+                  <span class="material-symbols-outlined">local_shipping</span>
+                </div>
+                <div
+                  class="w-16 h-16 glass-card rounded-xl flex items-center justify-center transition-all duration-700 opacity-100 translate-y-0"
+                >
+                  <span class="material-symbols-outlined">directions_car</span>
+                </div>
+              </div>
+              <div
+                class="absolute -right-20 -bottom-20 w-80 h-80 bg-primary-fixed-dim/10 rounded-full blur-3xl"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section 4: DUAL AUDIENCE -->
+      <section class="py-section-gap">
+        <div
+          class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-2 gap-12"
+        >
+          <!-- Clients -->
+          <div class="space-y-6">
+            <h2 class="font-headline-lg text-headline-lg">
+              Soluciones rápidas para
+              <span class="text-primary-fixed-dim">Clientes</span>
+            </h2>
+            <p class="text-on-surface-variant font-body-lg">
+              Entregas en menos de 30 minutos y viajes seguros con conductores
+              certificados. Todo desde la palma de tu mano.
+            </p>
+            <ul class="space-y-4">
+              <li class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary-fixed-dim"
+                  >check_circle</span
+                >
+                Tarifas transparentes sin sorpresas
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary-fixed-dim"
+                  >check_circle</span
+                >
+                Facturación automática para empresas
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary-fixed-dim"
+                  >check_circle</span
+                >
+                Cobertura total en el área metropolitana
+              </li>
+            </ul>
+            <button
+              class="bg-primary text-on-primary px-8 py-3 rounded-full font-bold active:scale-95 transition-transform"
+            >
+              Probar MOVEX Ahora
+            </button>
+          </div>
+          <!-- Drivers -->
+          <div class="space-y-6">
+            <h2 class="font-headline-lg text-headline-lg">
+              Independencia para
+              <span class="text-primary-fixed-dim">Conductores</span>
+            </h2>
+            <p class="text-on-surface-variant font-body-lg">
+              Sé tu propio jefe y genera ingresos según tu disponibilidad. Únete
+              a la comunidad de movilidad más grande.
+            </p>
+            <ul class="space-y-4">
+              <li class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary-fixed-dim"
+                  >check_circle</span
+                >
+                Retiros de ganancias semanales
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary-fixed-dim"
+                  >check_circle</span
+                >
+                Bonos por cumplimiento y desempeño
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary-fixed-dim"
+                  >check_circle</span
+                >
+                Seguro contra accidentes incluido
+              </li>
+            </ul>
+            <button
+              class="glass-card text-primary px-8 py-3 rounded-full font-bold active:scale-95 transition-transform transition-all duration-700 opacity-100 translate-y-0"
+            >
+              Registrarme como Conductor
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- Section 5: SOCIAL PROOF -->
+      <section class="py-section-gap bg-surface-container-lowest">
+        <div class="max-w-container-max mx-auto px-margin-desktop">
+          <div
+            class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6"
+          >
+            <div>
+              <h2 class="font-headline-lg text-headline-lg">
+                Nuestra comunidad habla
+              </h2>
+              <p class="text-on-surface-variant">
+                Más de 5,000 usuarios confían en MOVEX cada día.
+              </p>
+            </div>
+            <div class="flex items-center gap-2">
+              <div class="flex">
+                <span
+                  class="material-symbols-outlined text-yellow-500"
+                  style="font-variation-settings: &quot;FILL&quot; 1"
+                  >star</span
+                >
+                <span
+                  class="material-symbols-outlined text-yellow-500"
+                  style="font-variation-settings: &quot;FILL&quot; 1"
+                  >star</span
+                >
+                <span
+                  class="material-symbols-outlined text-yellow-500"
+                  style="font-variation-settings: &quot;FILL&quot; 1"
+                  >star</span
+                >
+                <span
+                  class="material-symbols-outlined text-yellow-500"
+                  style="font-variation-settings: &quot;FILL&quot; 1"
+                  >star</span
+                >
+                <span
+                  class="material-symbols-outlined text-yellow-500"
+                  style="font-variation-settings: &quot;FILL&quot; 1"
+                  >star_half</span
+                >
+              </div>
+              <span class="font-bold text-2xl">4.9/5</span>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-bento-gap">
+            <div
+              class="glass-card p-8 rounded-3xl space-y-4 transition-all duration-700 opacity-100 translate-y-0"
+            >
+              <div class="flex items-center gap-4">
+                <div
+                  class="w-12 h-12 rounded-full bg-primary-fixed-dim/20 overflow-hidden"
+                >
+                  <img
+                    class="w-full h-full object-cover"
+                    data-alt="A professional headshot of a middle-aged male driver smiling warmly at the camera. He is wearing a clean, branded polo shirt and stands in front of a modern electric vehicle. The setting is bright and sunny, conveying a sense of reliability and friendly service. The overall aesthetic is clean and professional, matching the premium brand colors."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKcdGYmbp1NTEzT5a7EyA_kdojF6HPwoeiMPzNU-E4N6jFIjCO3cuk0dCijZMc-Hd-FM5q2BrHG0n63C69sTVuZaC18TQonf4bjX1TQKkEm3f8uFdrfFpLQm-H_ghoQTqM9YP9N-wHCuJBgvVKKQ31FYdhFDLTZ3Mg6JiviA7odk2wIxd8AsVjRo2fNPkY8m53r-2a6JpGrjo-TllpOBPJhI_KaimwR0ZvNVLEO8qGbMQ0gcl7atBCu0GBa0cqlmZ6lrSPbhQKM3zt"
+                  />
+                </div>
+                <div>
+                  <h4 class="font-bold">Ricardo M.</h4>
+                  <p class="text-xs text-on-surface-variant">
+                    Conductor desde 2022
+                  </p>
+                </div>
+              </div>
+              <p class="italic text-on-surface-variant">
+                "La flexibilidad que me da MOVEX no la encontré en otro lado.
+                Mis ingresos han crecido un 40% este mes."
+              </p>
+            </div>
+            <div
+              class="glass-card p-8 rounded-3xl space-y-4 transition-all duration-700 opacity-100 translate-y-0"
+            >
+              <div class="flex items-center gap-4">
+                <div
+                  class="w-12 h-12 rounded-full bg-primary-fixed-dim/20 overflow-hidden"
+                >
+                  <img
+                    class="w-full h-full object-cover"
+                    data-alt="A close-up portrait of a young professional woman using a smartphone in a modern, glass-walled office environment. She looks satisfied and confident as she interacts with a digital service app. The lighting is bright and high-key, highlighting her positive expression and the sleek technology around her. The mood is efficient, modern, and trustworthy."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNQjW966Imk2Mb_s6VZ_U1K1kS5uFWij_f8tr2POlcRgUkoxehjxU6GwfsQXSi4AMX-jTu4KbdmM3P2GxT3OqCIfBpmhcn9QD7o6nCDAhIfwfwXV7I047NIw9XY0QvE4Tgjzrk0qNy6JQg3Fo1KVZTlkmEsXfWE-4OTQYtbGyqg8rdvaNDvt8g38UiKDUpQ0QfIgPGWpFUUIieKJCrrd6x1rpCMpm-q5MZwdGRZsRNKMh6aGv113f-jLH75h4QhtzpyV5dy0RA8A_P"
+                  />
+                </div>
+                <div>
+                  <h4 class="font-bold">Elena G.</h4>
+                  <p class="text-xs text-on-surface-variant">
+                    Usuario Frecuente
+                  </p>
+                </div>
+              </div>
+              <p class="italic text-on-surface-variant">
+                "Es la app de entregas más confiable que he usado. La rapidez de
+                los mensajeros es impresionante."
+              </p>
+            </div>
+            <div
+              class="glass-card p-8 rounded-3xl space-y-4 transition-all duration-700 opacity-100 translate-y-0"
+            >
+              <div class="flex items-center gap-4">
+                <div
+                  class="w-12 h-12 rounded-full bg-primary-fixed-dim/20 overflow-hidden"
+                >
+                  <img
+                    class="w-full h-full object-cover"
+                    data-alt="A portrait of a male entrepreneur in a casual-smart outfit, standing in a vibrant urban environment. He holds a package from a delivery service, appearing relieved and happy with the timely arrival. The background features blurred city lights and modern architecture, creating a sense of dynamic urban life and technological convenience."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoK-vunGtQSOUrejFbAXnN_xNpoYsJGifPFb1cpedpdIwYhBsp-pgxqMffsNlWRjI64ZpxcujNbIuJe1wxSkbJgB-e8Dry_G-mnuxXF35_bJUIXgM48feTzqKl2b8VNpyNZZKOrTZSANColBomaDbWl0XeGuYZIfnZYym3dvCkhjVCFpjLjAm75TI1GT_kx_2QbIAS9PsOOZx72zPDgjUCGBtePYt6NcJ1qsT4NPUkRx3etoMFpu2cW9P_9y7MFNPhl0IWkiYg7oAa"
+                  />
+                </div>
+                <div>
+                  <h4 class="font-bold">Javier L.</h4>
+                  <p class="text-xs text-on-surface-variant">Emprendedor</p>
+                </div>
+              </div>
+              <p class="italic text-on-surface-variant">
+                "Uso MOVEX para toda la logística de mi tienda online. Nunca me
+                han fallado en una entrega."
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section 6: FAQ -->
+      <section class="py-section-gap">
+        <div class="max-w-3xl mx-auto px-margin-mobile">
+          <h2 class="font-headline-lg text-headline-lg text-center mb-12">
+            Preguntas Frecuentes
+          </h2>
+          <div class="space-y-4">
+            <details
+              class="glass-card rounded-2xl p-6 group cursor-pointer border-white/5 transition-all duration-700 opacity-100 translate-y-0"
+              open=""
+            >
+              <summary
+                class="flex justify-between items-center font-bold text-lg list-none"
+              >
+                ¿Cómo pedir un domicilio con MOVEX?
+                <span
+                  class="material-symbols-outlined transition-transform group-open:rotate-180"
+                  >expand_more</span
+                >
+              </summary>
+              <p class="pt-4 text-on-surface-variant">
+                Simplemente descarga nuestra app, selecciona el tipo de entrega,
+                indica las direcciones y confirma tu pedido. Un conductor
+                cercano lo aceptará en segundos.
+              </p>
+            </details>
+            <details
+              class="glass-card rounded-2xl p-6 group cursor-pointer border-white/5 transition-all duration-700 opacity-100 translate-y-0"
+              open=""
+            >
+              <summary
+                class="flex justify-between items-center font-bold text-lg list-none"
+              >
+                ¿Cómo puedo ser conductor?
+                <span
+                  class="material-symbols-outlined transition-transform group-open:rotate-180"
+                  >expand_more</span
+                >
+              </summary>
+              <p class="pt-4 text-on-surface-variant">
+                Debes registrarte en nuestro portal de conductores con tus
+                documentos vigentes (identificación, licencia, seguro). Una vez
+                aprobada tu cuenta, puedes empezar a ganar.
+              </p>
+            </details>
+            <details
+              class="glass-card rounded-2xl p-6 group cursor-pointer border-white/5 transition-all duration-700 opacity-100 translate-y-0"
+              open=""
+            >
+              <summary
+                class="flex justify-between items-center font-bold text-lg list-none"
+              >
+                ¿Qué medidas de seguridad ofrecen?
+                <span
+                  class="material-symbols-outlined transition-transform group-open:rotate-180"
+                  >expand_more</span
+                >
+              </summary>
+              <p class="pt-4 text-on-surface-variant">
+                Contamos con seguimiento GPS en tiempo real compartido, botón de
+                pánico en la app, y verificación rigurosa de todos nuestros
+                aliados conductores.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+      <!-- Section 7: FINAL CTA -->
+      <section class="py-section-gap relative overflow-hidden">
+        <div class="absolute inset-0 bg-primary-fixed-dim/5 z-0"></div>
+        <div
+          class="max-w-container-max mx-auto px-margin-desktop text-center relative z-10 space-y-8"
+        >
+          <h2 class="font-display-lg text-display-lg-mobile md:text-display-lg">
+            Empieza hoy mismo
+          </h2>
+          <p
+            class="font-body-lg text-body-lg max-w-2xl mx-auto text-on-surface-variant"
+          >
+            Únete a la revolución de la movilidad inteligente. Disponible ahora
+            en iOS y Android.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-6 justify-center">
+            <button
+              class="bg-primary text-on-primary px-12 py-5 rounded-full font-bold text-xl active:scale-95 transition-transform flex items-center justify-center gap-3"
+            >
+              <span class="material-symbols-outlined">rocket_launch</span>
+              Solicitar Servicio
+            </button>
+            <button
+              class="glass-card text-primary px-12 py-5 rounded-full font-bold text-xl border-white/20 active:scale-95 transition-transform flex items-center justify-center gap-3 transition-all duration-700 opacity-100 translate-y-0"
+            >
+              <span class="material-symbols-outlined">person_add</span>
+              Ser Conductor
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer
+      class="bg-background w-full py-section-gap border-t border-outline-variant"
+    >
+      <div
+        class="grid grid-cols-2 md:grid-cols-4 gap-bento-gap max-w-container-max mx-auto px-margin-desktop"
+      >
+        <div class="col-span-2 md:col-span-1 space-y-6">
+          <div class="font-headline-md text-headline-md font-bold text-primary">
+            MOVEX
+          </div>
+          <p class="text-on-tertiary-container font-body-md text-sm">
+            Transformando la movilidad urbana con tecnología de punta y
+            seguridad inigualable.
+          </p>
+        </div>
+        <div class="space-y-4">
+          <h5 class="font-bold text-primary">Plataforma</h5>
+          <ul class="space-y-2 text-on-tertiary-container text-sm">
+            <li class="">
+              <a class="hover:text-primary transition-colors" href="#"
+                >Servicios de Entrega Movex</a
+              >
+            </li>
+            <li class="">
+              <a class="hover:text-primary transition-colors" href="#"
+                >Conducir con Movex</a
+              >
+            </li>
+            <li class="">
+              <a class="hover:text-primary transition-colors" href="#"
+                >Portal de Clientes</a
+              >
+            </li>
+            <li class="">
+              <a class="hover:text-primary transition-colors" href="#"
+                >Registro de Conductores</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="space-y-4">
+          <h5 class="font-bold text-primary">Empresa</h5>
+          <ul class="space-y-2 text-on-tertiary-container text-sm">
+            <li class="">
+              <a class="hover:text-primary transition-colors" href="#"
+                >Sobre Nosotros</a
+              >
+            </li>
+            <li class="">
+              <a class="hover:text-primary transition-colors" href="#"
+                >Soporte al Cliente</a
+              >
+            </li>
+            <li class="">
+              <a class="hover:text-primary transition-colors" href="#"
+                >Términos y Condiciones</a
+              >
+            </li>
+            <li class="">
+              <a class="hover:text-primary transition-colors" href="#"
+                >Política de Privacidad</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="space-y-4">
+          <h5 class="font-bold text-primary">Síguenos</h5>
+          <div class="flex gap-4">
+            <a
+              class="w-10 h-10 rounded-full glass-card flex items-center justify-center hover:bg-white/10 transition-colors transition-all duration-700 opacity-100 translate-y-0"
+              href="#"
+              ><span
+                class="material-symbols-outlined text-sm hover:text-[#C5F6ED] transition-colors"
+                >camera</span
+              ></a
+            >
+            <a
+              class="w-10 h-10 rounded-full glass-card flex items-center justify-center hover:bg-white/10 transition-colors transition-all duration-700 opacity-100 translate-y-0"
+              href="#"
+              ><span
+                class="material-symbols-outlined text-sm hover:text-[#C5F6ED] transition-colors"
+                >music_note</span
+              ></a
+            >
+          </div>
+          <p class="text-xs text-on-tertiary-container pt-8">
+            © 2024 MOVEX Mobility. Todos los derechos reservados.
+          </p>
+        </div>
+      </div>
+    </footer>

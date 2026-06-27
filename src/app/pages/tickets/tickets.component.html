@@ -1,0 +1,240 @@
+<!-- TopAppBar -->
+<header class="fixed top-0 right-0 left-64 z-40 bg-surface/40 backdrop-blur-md border-b border-white/10 flex justify-between items-center px-gutter h-16">
+<div class="flex items-center gap-stack-md">
+<h1 class="font-headline-md text-headline-md font-black text-on-surface tracking-tight">MOVEX</h1>
+
+</div>
+<div class="flex items-center gap-4">
+<button class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-surface-variant/50 transition-all">
+<span class="material-symbols-outlined text-on-surface">notifications</span>
+</button>
+<div class="w-px h-6 bg-white/10 mx-2"></div>
+<div class="flex items-center gap-3">
+<div class="text-right hidden sm:block">
+<p class="text-label-lg font-bold leading-none">Admin Soporte</p>
+<p class="text-[10px] text-primary uppercase tracking-widest mt-1">Nivel 3</p>
+</div>
+<div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-on-primary font-bold">AS</div>
+</div>
+</div>
+</header>
+<div class="pt-16 h-screen overflow-y-auto custom-scrollbar bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-surface-container-low via-background to-background">
+<div class="p-container-margin max-w-[1600px] mx-auto space-y-stack-lg">
+<!-- Header -->
+<header class="flex flex-col gap-1">
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Soporte y Atención al Cliente</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Gestión de tickets y consultas activas de conductores y clientes en Nariño.</p>
+</header>
+<!-- Stats Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<div class="glass-panel p-panel-padding rounded-xl relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-[64px] text-primary">confirmation_number</span>
+</div>
+<p class="text-label-sm font-label-sm text-on-surface-variant uppercase tracking-widest">Tickets Abiertos</p>
+<div class="mt-2 flex items-baseline gap-2">
+<h3 class="text-headline-lg font-headline-lg font-bold">24</h3>
+<span class="text-[12px] text-error font-medium flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">trending_up</span> +12%
+                        </span>
+</div>
+<div class="mt-4 w-full bg-white/5 h-1 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-3/4"></div>
+</div>
+</div>
+<div class="glass-panel p-panel-padding rounded-xl relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-[64px] text-primary">schedule</span>
+</div>
+<p class="text-label-sm font-label-sm text-on-surface-variant uppercase tracking-widest">Tiempo de Respuesta</p>
+<div class="mt-2 flex items-baseline gap-2">
+<h3 class="text-headline-lg font-headline-lg font-bold">14<span class="text-body-sm font-normal ml-1">min</span></h3>
+<span class="text-[12px] text-primary font-medium flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">trending_down</span> -5m
+                        </span>
+</div>
+<div class="mt-4 w-full bg-white/5 h-1 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-1/2"></div>
+</div>
+</div>
+<div class="glass-panel p-panel-padding rounded-xl relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-[64px] text-primary">star</span>
+</div>
+<p class="text-label-sm font-label-sm text-on-surface-variant uppercase tracking-widest">Satisfacción</p>
+<div class="mt-2 flex items-baseline gap-2">
+<h3 class="text-headline-lg font-headline-lg font-bold">4.8<span class="text-body-sm font-normal ml-1">/5</span></h3>
+<span class="text-[12px] text-primary font-medium flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Estable
+                        </span>
+</div>
+<div class="mt-4 w-full bg-white/5 h-1 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-[96%]"></div>
+</div>
+</div>
+<div class="glass-panel p-panel-padding rounded-xl relative overflow-hidden group border-primary/20">
+<div class="absolute top-0 right-0 p-4">
+<span class="relative flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-primary"></span>
+</span>
+</div>
+<p class="text-label-sm font-label-sm text-on-surface-variant uppercase tracking-widest">Soporte en Línea</p>
+<div class="mt-2">
+<h3 class="text-headline-lg font-headline-lg font-bold">8<span class="text-body-sm font-normal ml-1">agentes</span></h3>
+<p class="text-[12px] text-on-surface-variant mt-1">Disponibilidad inmediata</p>
+</div>
+<div class="mt-4 flex -space-x-2">
+<div class="w-6 h-6 rounded-full border border-background bg-primary"></div>
+<div class="w-6 h-6 rounded-full border border-background bg-secondary-fixed-dim"></div>
+<div class="w-6 h-6 rounded-full border border-background bg-tertiary-fixed-dim"></div>
+<div class="w-6 h-6 rounded-full border border-background bg-surface-variant flex items-center justify-center text-[10px] text-on-surface">+5</div>
+</div>
+</div>
+</div>
+<!-- Management Section -->
+<div class="grid grid-cols-12 gap-gutter h-[600px]">
+<!-- Left Column: Ticket List -->
+<div class="col-span-12 lg:col-span-5 xl:col-span-4 flex flex-col h-full bg-surface-container/30 backdrop-blur-md rounded-xl border border-white/5 overflow-hidden">
+<div class="p-panel-padding border-b border-white/5 flex justify-between items-center bg-white/5">
+<h4 class="font-label-lg text-label-lg text-on-surface">Tickets Activos</h4>
+<button class="text-[12px] text-primary flex items-center gap-1 hover:underline">
+                            Ver todos <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+<div class="flex-1 overflow-y-auto custom-scrollbar p-2 space-y-2">
+<!-- Ticket Item Active -->
+<div class="p-4 rounded-lg bg-white/10 border-l-4 border-primary cursor-pointer transition-all hover:bg-white/[0.15]">
+<div class="flex justify-between items-start mb-2">
+<span class="px-2 py-0.5 rounded bg-error-container/30 text-error text-[10px] font-bold uppercase tracking-wider">Alta Prioridad</span>
+<span class="text-[10px] text-on-surface-variant">Hace 4m</span>
+</div>
+<h5 class="font-bold text-body-md text-on-surface truncate">Error en cobro de peaje dinámico</h5>
+<div class="flex items-center gap-2 mt-1">
+<span class="material-symbols-outlined text-[14px] text-primary">local_shipping</span>
+<p class="text-body-sm text-on-surface-variant">Carlos M. • Conductor</p>
+</div>
+<p class="mt-2 text-body-sm text-on-surface-variant line-clamp-1 italic">"No se aplicó el descuento de la ruta Pasto-Ipiales..."</p>
+</div>
+<!-- Ticket Item -->
+<div class="p-4 rounded-lg border border-white/5 hover:bg-white/5 cursor-pointer transition-all">
+<div class="flex justify-between items-start mb-2">
+<span class="px-2 py-0.5 rounded bg-primary/20 text-primary text-[10px] font-bold uppercase tracking-wider">Media</span>
+<span class="text-[10px] text-on-surface-variant">Hace 22m</span>
+</div>
+<h5 class="font-bold text-body-md text-on-surface truncate">Actualización de documentos</h5>
+<div class="flex items-center gap-2 mt-1">
+<span class="material-symbols-outlined text-[14px] text-on-surface-variant">groups</span>
+<p class="text-body-sm text-on-surface-variant">Tiendas Ara • Cliente</p>
+</div>
+<p class="mt-2 text-body-sm text-on-surface-variant line-clamp-1">Adjunto RUT actualizado para facturación electrónica...</p>
+</div>
+<!-- Ticket Item -->
+<div class="p-4 rounded-lg border border-white/5 hover:bg-white/5 cursor-pointer transition-all opacity-70">
+<div class="flex justify-between items-start mb-2">
+<span class="px-2 py-0.5 rounded bg-surface-variant text-on-surface-variant text-[10px] font-bold uppercase tracking-wider">Baja</span>
+<span class="text-[10px] text-on-surface-variant">Hace 1h</span>
+</div>
+<h5 class="font-bold text-body-md text-on-surface truncate">Duda sobre horario de cargue</h5>
+<div class="flex items-center gap-2 mt-1">
+<span class="material-symbols-outlined text-[14px] text-on-surface-variant">local_shipping</span>
+<p class="text-body-sm text-on-surface-variant">Luis G. • Conductor</p>
+</div>
+</div>
+<!-- Ticket Item -->
+<div class="p-4 rounded-lg border border-white/5 hover:bg-white/5 cursor-pointer transition-all">
+<div class="flex justify-between items-start mb-2">
+<span class="px-2 py-0.5 rounded bg-primary/20 text-primary text-[10px] font-bold uppercase tracking-wider">Media</span>
+<span class="text-[10px] text-on-surface-variant">Hace 2h</span>
+</div>
+<h5 class="font-bold text-body-md text-on-surface truncate">Solicitud de nueva ruta</h5>
+<div class="flex items-center gap-2 mt-1">
+<span class="material-symbols-outlined text-[14px] text-on-surface-variant">groups</span>
+<p class="text-body-sm text-on-surface-variant">Inversiones Cali • Cliente</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Chat/Action Panel -->
+<div class="col-span-12 lg:col-span-7 xl:col-span-8 flex flex-col h-full bg-surface-container/40 backdrop-blur-md rounded-xl border border-white/5 overflow-hidden">
+<div class="flex flex-col h-full">
+<div class="px-panel-padding py-6 border-b border-white/5 flex items-center justify-between bg-white/5">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="px-2 py-0.5 rounded bg-primary/20 text-primary text-[10px] font-bold uppercase tracking-wider">En Progreso</span>
+<p class="text-[12px] text-on-surface-variant font-medium">ID: #TKT-8842</p>
+</div>
+<h4 class="font-headline-md text-headline-md font-bold text-on-surface">Error en cobro de peaje dinámico</h4>
+</div>
+<div class="flex gap-3">
+<button class="flex items-center gap-2 px-4 py-2 rounded-lg bg-[#25D366] text-black text-label-sm font-bold hover:opacity-90 transition-all">
+<span class="material-symbols-outlined text-[18px]">chat</span> Contactar vía WhatsApp
+</button>
+<button class="flex items-center gap-2 px-4 py-2 rounded-lg border border-white/10 text-label-sm font-medium hover:bg-white/5 transition-all text-on-surface">
+<span class="material-symbols-outlined text-[18px]">call</span> Llamar al Usuario
+</button>
+</div>
+</div>
+<div class="flex-1 overflow-y-auto custom-scrollbar p-panel-padding space-y-stack-lg">
+<section>
+<div>
+<h5 class="text-label-lg font-bold text-primary mb-2 uppercase tracking-widest">Resumen del Caso</h5>
+<div class="bg-white/5 rounded-xl p-4 border border-white/5">
+<p class="text-body-md text-on-surface leading-relaxed">El conductor reporta que al cruzar el peaje de El Placer (Ruta Pasto-Ipiales), el sistema no aplicó el descuento automático por vinculación MOVEX. Se le realizó el cobro total de $14.200 COP. Requiere verificación de su manifiesto #MAN-9921 y ajuste de saldo en su cuenta corporativa.</p>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4 mt-4">
+<div class="bg-white/5 p-4 rounded-xl border border-white/5">
+<p class="text-[11px] text-on-surface-variant uppercase mb-1">Conductor</p>
+<p class="text-body-md font-medium">Carlos Mario Rodríguez</p>
+</div>
+<div class="bg-white/5 p-4 rounded-xl border border-white/5">
+<p class="text-[11px] text-on-surface-variant uppercase mb-1">Ubicación</p>
+<p class="text-body-md font-medium">Pasto, Nariño</p>
+</div>
+</div>
+</section>
+<section>
+<h5 class="text-label-lg font-bold text-primary mb-4 uppercase tracking-widest">Historial del Ticket</h5>
+<div class="relative space-y-6 ml-4 border-l border-white/10 pl-6">
+<div class="relative">
+<span class="absolute -left-[31px] top-1 w-2.5 h-2.5 rounded-full bg-primary"></span>
+<div>
+<p class="text-body-md font-bold">Ticket Creado</p>
+<p class="text-body-sm text-on-surface-variant">El sistema registró la incidencia automáticamente desde el portal de peajes.</p>
+<p class="text-[10px] text-primary mt-1 uppercase">Hoy, 14:32</p>
+</div>
+</div>
+<div class="relative">
+<span class="absolute -left-[31px] top-1 w-2.5 h-2.5 rounded-full bg-white/30"></span>
+<div>
+<p class="text-body-md font-bold">Asignado a Soporte Nivel 3</p>
+<p class="text-body-sm text-on-surface-variant">Asignado a Admin Soporte para verificación técnica.</p>
+<p class="text-[10px] text-on-surface-variant mt-1 uppercase">Hoy, 14:34</p>
+</div>
+</div>
+<div class="relative">
+<span class="absolute -left-[31px] top-1 w-2.5 h-2.5 rounded-full bg-white/30"></span>
+<div>
+<p class="text-body-md font-bold">Verificación de Ubicación</p>
+<p class="text-body-sm text-on-surface-variant">GPS confirma estancia en Peaje El Placer durante el evento.</p>
+<p class="text-[10px] text-on-surface-variant mt-1 uppercase">Hoy, 14:35</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+<div class="p-panel-padding bg-white/5 border-t border-white/5 flex justify-end gap-3">
+<button class="px-6 py-2.5 rounded-lg border border-white/10 text-label-sm font-medium hover:bg-white/5 transition-all text-on-surface">Escalar Caso</button>
+<button class="px-6 py-2.5 rounded-lg bg-primary text-on-primary text-label-sm font-bold hover:opacity-90 transition-all">Resolver Ticket</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Background Decoration -->
+<div class="fixed top-0 left-0 w-full h-full -z-10 opacity-20 pointer-events-none">
+<div class="absolute top-[-10%] right-[-10%] w-[50%] h-[50%] bg-primary/20 blur-[120px] rounded-full"></div>
+<div class="absolute bottom-[-10%] left-[20%] w-[40%] h-[40%] bg-surface-variant/30 blur-[100px] rounded-full"></div>
+</div>

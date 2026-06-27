@@ -1,0 +1,30 @@
+[
+  {
+    "path": "live-monitoreo",
+    "loadComponent": "() => import('./pages/live-monitoreo/live-monitoreo.component').then(m => m.LiveMonitoreoComponent)"
+  },
+  {
+    "path": "clientes",
+    "loadComponent": "() => import('./pages/clientes/clientes.component').then(m => m.ClientesComponent)"
+  },
+  {
+    "path": "recargas",
+    "loadComponent": "() => import('./pages/recargas/recargas.component').then(m => m.RecargasComponent)"
+  },
+  {
+    "path": "servicios",
+    "loadComponent": "() => import('./pages/servicios/servicios.component').then(m => m.ServiciosComponent)"
+  },
+  {
+    "path": "landing-premium",
+    "loadComponent": "() => import('./pages/landing-premium/landing-premium.component').then(m => m.LandingPremiumComponent)"
+  },
+  {
+    "path": "mi-cuenta",
+    "loadComponent": "() => import('./pages/mi-cuenta/mi-cuenta.component').then(m => m.MiCuentaComponent)"
+  },
+  {
+    "path": "tickets",
+    "loadComponent": "() => import('./pages/tickets/tickets.component').then(m => m.TicketsComponent)"
+  }
+]

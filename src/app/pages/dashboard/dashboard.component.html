@@ -1,0 +1,101 @@
+<div class="h-screen flex overflow-hidden bg-primary-container text-on-surface font-body-md w-full">
+  <!-- SideNavBar Component -->
+  <aside class="bg-zinc-950/80 backdrop-blur-2xl text-white font-inter text-sm font-medium h-screen w-64 border-r border-white/10 shadow-2xl fixed left-0 top-0 flex flex-col p-6 z-50">
+    <div class="mb-10">
+      <h1 class="text-2xl font-black text-white px-2 py-4">MOVEX</h1>
+      <p class="font-label-sm text-label-sm text-zinc-500 px-2 uppercase tracking-wider">Control Logístico</p>
+    </div>
+    <nav class="flex-1 flex flex-col gap-2">
+      <!-- Dashboard Main -->
+      <a routerLink="/dashboard"
+         [routerLinkActiveOptions]="{ exact: true }"
+         routerLinkActive="bg-primary text-zinc-950 font-bold shadow-[0_0_15px_rgba(197,246,237,0.2)]"
+         #rlaDashboard="routerLinkActive"
+         [ngClass]="!rlaDashboard.isActive ? 'text-zinc-500 hover:text-white hover:bg-white/5' : ''"
+         class="flex items-center gap-3 px-4 py-2.5 rounded-lg ease-in-out duration-300 transition-all">
+        <span class="material-symbols-outlined" data-icon="layout_dashboard"
+              [class.filled]="rlaDashboard.isActive">dashboard</span>
+        Dashboard
+      </a>
+
+      <!-- Conductores -->
+      <a routerLink="/dashboard/conductores"
+         [routerLinkActiveOptions]="{ exact: true }"
+         routerLinkActive="bg-primary text-zinc-950 font-bold shadow-[0_0_15px_rgba(197,246,237,0.2)]"
+         #rlaConductores="routerLinkActive"
+         [ngClass]="!rlaConductores.isActive ? 'text-zinc-500 hover:text-white hover:bg-white/5' : ''"
+         class="flex items-center gap-3 px-4 py-2.5 rounded-lg ease-in-out duration-300 transition-all">
+        <span class="material-symbols-outlined" data-icon="local_shipping"
+              [class.filled]="rlaConductores.isActive">local_shipping</span>
+        Conductores
+      </a>
+
+      <!-- Recargas -->
+      <a routerLink="/dashboard/recargas"
+         routerLinkActive="bg-primary text-zinc-950 font-bold shadow-[0_0_15px_rgba(197,246,237,0.2)]"
+         #rlaRecargas="routerLinkActive"
+         [ngClass]="!rlaRecargas.isActive ? 'text-zinc-500 hover:text-white hover:bg-white/5' : ''"
+         class="flex items-center gap-3 px-4 py-2.5 rounded-lg ease-in-out duration-300 transition-all">
+        <span class="material-symbols-outlined" data-icon="payments"
+              [class.filled]="rlaRecargas.isActive">payments</span>
+        Recargas
+      </a>
+
+      <!-- Servicios -->
+      <a routerLink="/dashboard/servicios"
+         routerLinkActive="bg-primary text-zinc-950 font-bold shadow-[0_0_15px_rgba(197,246,237,0.2)]"
+         #rlaServicios="routerLinkActive"
+         [ngClass]="!rlaServicios.isActive ? 'text-zinc-500 hover:text-white hover:bg-white/5' : ''"
+         class="flex items-center gap-3 px-4 py-2.5 rounded-lg ease-in-out duration-300 transition-all">
+        <span class="material-symbols-outlined" data-icon="inventory_2"
+              [class.filled]="rlaServicios.isActive">inventory_2</span>
+        Servicios
+      </a>
+
+      <!-- Clientes -->
+      <a routerLink="/dashboard/clientes"
+         routerLinkActive="bg-primary text-zinc-950 font-bold shadow-[0_0_15px_rgba(197,246,237,0.2)]"
+         #rlaClientes="routerLinkActive"
+         [ngClass]="!rlaClientes.isActive ? 'text-zinc-500 hover:text-white hover:bg-white/5' : ''"
+         class="flex items-center gap-3 px-4 py-2.5 rounded-lg ease-in-out duration-300 transition-all">
+        <span class="material-symbols-outlined" data-icon="group"
+              [class.filled]="rlaClientes.isActive">group</span>
+        Clientes
+      </a>
+
+      <!-- Soporte (Tickets) -->
+      <a routerLink="/dashboard/tickets"
+         routerLinkActive="bg-primary text-zinc-950 font-bold shadow-[0_0_15px_rgba(197,246,237,0.2)]"
+         #rlaTickets="routerLinkActive"
+         [ngClass]="!rlaTickets.isActive ? 'text-zinc-500 hover:text-white hover:bg-white/5' : ''"
+         class="flex items-center gap-3 px-4 py-2.5 rounded-lg ease-in-out duration-300 transition-all">
+        <span class="material-symbols-outlined" data-icon="support_agent"
+              [class.filled]="rlaTickets.isActive">support_agent</span>
+        Soporte
+      </a>
+
+      <!-- Configuración (Mi Cuenta) -->
+      <a routerLink="/dashboard/mi-cuenta"
+         routerLinkActive="bg-primary text-zinc-950 font-bold shadow-[0_0_15px_rgba(197,246,237,0.2)]"
+         #rlaMiCuenta="routerLinkActive"
+         [ngClass]="!rlaMiCuenta.isActive ? 'text-zinc-500 hover:text-white hover:bg-white/5' : ''"
+         class="flex items-center gap-3 px-4 py-2.5 rounded-lg ease-in-out duration-300 transition-all">
+        <span class="material-symbols-outlined" data-icon="settings"
+              [class.filled]="rlaMiCuenta.isActive">settings</span>
+        Configuración
+      </a>
+    </nav>
+    <div class="mt-auto pt-6 border-t border-zinc-900">
+      <a routerLink="/"
+         class="flex items-center gap-3 text-zinc-500 hover:text-white px-4 py-2.5 transition-all hover:bg-white/5 rounded-lg ease-in-out duration-300">
+        <span class="material-symbols-outlined" data-icon="logout">logout</span>
+        Cerrar Sesión
+      </a>
+    </div>
+  </aside>
+
+  <!-- Main Content Area -->
+  <main class="ml-64 flex-grow flex flex-col h-screen overflow-hidden relative">
+    <router-outlet></router-outlet>
+  </main>
+</div>

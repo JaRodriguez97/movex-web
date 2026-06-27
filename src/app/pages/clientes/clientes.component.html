@@ -1,0 +1,281 @@
+<div class="flex-grow flex flex-col h-screen overflow-hidden relative">
+<!-- TopAppBar (Shared Component) -->
+<header class="fixed top-0 right-0 left-64 z-40 bg-surface/40 backdrop-blur-md border-b border-white/10 flex items-center px-gutter h-16 justify-end">
+<div class="flex items-center gap-4">
+<button class="w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-variant/50 transition-all duration-300 relative">
+<span class="material-symbols-outlined">notifications</span>
+<span class="absolute top-2.5 right-2.5 w-2 h-2 bg-error rounded-full border-2 border-surface"></span>
+</button>
+<div class="h-8 w-[1px] bg-white/10 mx-2"></div>
+<button class="flex items-center gap-3 pl-2 pr-1 py-1 rounded-full hover:bg-surface-variant/50 transition-all duration-300">
+<span class="text-label-lg font-label-lg text-on-surface">Admin Movex</span>
+<div class="w-8 h-8 rounded-full bg-gradient-to-tr from-primary to-white flex items-center justify-center overflow-hidden">
+<img alt="User Profile" class="w-full h-full object-cover" data-alt="A detailed professional headshot of a logistics manager in a dark background. He is wearing a minimalist tech-wear jacket and has a confident, professional expression. The lighting is low-key with subtle silver and primary gray accents that match the MOVEX dark-mode design system. High definition digital rendering." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9wZ5gU0R0GEX7oWb8X7D_6oKhDBNdft6OYSJtWak62U-izVxBSz45PWnl2oYSCWjwbBx8Elk6NJXnlHQQQ1JlB1qhSiYy5tiNgR1WxBm8-EZ6dESTK9UIjyJjbBzysCDO2ZHamL4ysUgXYCEzI9pF_pC9IQNtHjo6svJr2G2d6MnZUEZ8nlYdS1MibFDTRO1yP1N7hEPydXVXRqwg9hoiE4lAY2zj_yYuZ7ngvS-33HWtM_nfQ_hAYqcRVgpWmMFemY8_6TgpmbFM">
+</div>
+</button>
+</div>
+</header>
+<!-- Scrollable Content -->
+<div class="mt-16 p-container-margin overflow-y-auto custom-scrollbar flex-grow space-y-stack-lg">
+<!-- Page Header -->
+<div class="flex justify-between items-end">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Gestión de Clientes</h2>
+<p class="text-on-surface-variant font-body-sm mt-1">Monitorea y administra la base de usuarios de la red MOVEX.</p>
+</div>
+<button class="bg-primary text-surface px-6 py-2.5 rounded-lg font-label-lg flex items-center gap-2 hover:bg-white transition-all active:scale-95 shadow-lg shadow-primary/10">
+<span class="material-symbols-outlined text-xl">person_add</span>
+                    Agregar Cliente
+                </button>
+</div>
+<!-- Resumen de Clientes (Bento Grid) -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<div class="glass-panel p-panel-padding rounded-xl flex flex-col justify-between h-32 group hover:bg-white/10 transition-all">
+<div class="flex justify-between items-start">
+<span class="text-on-surface-variant text-label-lg uppercase tracking-wider">Clientes Totales</span>
+<span class="material-symbols-outlined text-primary/50 group-hover:text-primary transition-colors">groups</span>
+</div>
+<div class="flex items-end justify-between">
+<span class="text-3xl font-headline-md text-on-surface">1,284</span>
+<span class="text-xs text-emerald-400 flex items-center gap-1 mb-1">
+<span class="material-symbols-outlined text-xs">trending_up</span> +12%
+                        </span>
+</div>
+</div>
+<div class="glass-panel p-panel-padding rounded-xl flex flex-col justify-between h-32 group hover:bg-white/10 transition-all">
+<div class="flex justify-between items-start">
+<span class="text-on-surface-variant text-label-lg uppercase tracking-wider">Activos Hoy</span>
+<span class="material-symbols-outlined text-primary/50 group-hover:text-primary transition-colors">bolt</span>
+</div>
+<div class="flex items-end justify-between">
+<span class="text-3xl font-headline-md text-on-surface">432</span>
+<span class="text-xs text-on-surface-variant flex items-center gap-1 mb-1">
+                            Prom. 390
+                        </span>
+</div>
+</div>
+<div class="glass-panel p-panel-padding rounded-xl flex flex-col justify-between h-32 group hover:bg-white/10 transition-all">
+<div class="flex justify-between items-start">
+<span class="text-on-surface-variant text-label-lg uppercase tracking-wider">Nuevos este Mes</span>
+<span class="material-symbols-outlined text-primary/50 group-hover:text-primary transition-colors">new_releases</span>
+</div>
+<div class="flex items-end justify-between">
+<span class="text-3xl font-headline-md text-on-surface">87</span>
+<span class="text-xs text-emerald-400 flex items-center gap-1 mb-1">
+<span class="material-symbols-outlined text-xs">trending_up</span> +5%
+                        </span>
+</div>
+</div>
+
+<div class="glass-panel p-panel-padding rounded-xl flex flex-col justify-between h-32 group hover:bg-white/10 transition-all">
+<div class="flex justify-between items-start">
+<span class="text-on-surface-variant text-label-lg uppercase tracking-wider">Tasa de Retención</span>
+<span class="material-symbols-outlined text-primary/50 group-hover:text-primary transition-colors">person_add_check</span>
+</div>
+<div class="flex items-end justify-between">
+<span class="text-3xl font-headline-md text-on-surface">94%</span>
+<span class="text-xs text-emerald-400 flex items-center gap-1 mb-1">
+<span class="material-symbols-outlined text-xs">trending_up</span> +2.4%
+</span>
+</div>
+</div></div>
+<!-- Filtros y Tabla -->
+<div class="glass-panel rounded-xl overflow-hidden flex flex-col">
+<!-- Toolbar -->
+<div class="px-gutter py-4 border-b border-white/5 flex flex-wrap justify-between items-center gap-4 bg-surface-container-low/30">
+<div class="flex items-center gap-3">
+<div class="bg-surface border border-white/10 rounded-lg flex p-1">
+<button class="px-4 py-1.5 text-sm rounded-md bg-surface-variant text-on-surface shadow-sm transition-all">Todos</button>
+<button class="px-4 py-1.5 text-sm rounded-md text-on-surface-variant hover:text-on-surface transition-all">Activos</button>
+<button class="px-4 py-1.5 text-sm rounded-md text-on-surface-variant hover:text-on-surface transition-all">Inactivos</button>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-xs text-on-surface-variant">Mostrando 10 de 1,284 clientes</span>
+<div class="flex gap-1">
+<button class="w-8 h-8 rounded border border-white/10 flex items-center justify-center hover:bg-white/5 disabled:opacity-30" disabled="">
+<span class="material-symbols-outlined text-lg">chevron_left</span>
+</button>
+<button class="w-8 h-8 rounded border border-white/10 flex items-center justify-center hover:bg-white/5">
+<span class="material-symbols-outlined text-lg">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-white/5 text-on-surface-variant text-label-lg uppercase tracking-wider">
+<th class="px-gutter py-4 font-semibold">Nombre y Contacto</th>
+<th class="px-6 py-4 font-semibold">Ubicación</th>
+<th class="px-6 py-4 font-semibold">Último Servicio</th>
+<th class="px-6 py-4 font-semibold">Total Gastado</th>
+<th class="px-6 py-4 font-semibold">Estado</th>
+<th class="px-gutter py-4 font-semibold text-right">Acciones</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-white/5">
+<tr class="hover:bg-white/[0.02] transition-colors group">
+<td class="px-gutter py-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-variant flex items-center justify-center text-primary font-bold">CR</div>
+<div>
+<p class="text-on-surface font-semibold">Carlos Rodríguez</p>
+<p class="text-on-surface-variant text-xs">c.rodriguez&#64;email.com • 315 234 5678</p>
+</div>
+</div>
+</td>
+<td class="px-6 py-4">
+<div class="flex items-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-sm">location_on</span>
+<span class="">Pasto, Nariño</span>
+</div>
+</td>
+<td class="px-6 py-4">
+<p class="text-on-surface text-sm">Hace 2 horas</p>
+<p class="text-on-surface-variant text-xs">Ref: #MOV-89021</p>
+</td>
+<td class="px-6 py-4"><p class="text-on-surface font-medium">$1,250,000 <span class="text-[10px] text-on-surface-variant">COP</span></p>
+</td>
+<td class="px-6 py-4">
+<span class="px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">Activo</span>
+</td>
+<td class="px-gutter py-4 text-right">
+<div class="flex items-center justify-end gap-2">
+<button class="p-2 text-on-surface-variant hover:text-primary transition-colors" title="Ver Historial">
+<span class="material-symbols-outlined text-xl">history</span>
+</button>
+<button class="p-2 text-on-surface-variant hover:text-primary transition-colors" title="Editar">
+<span class="material-symbols-outlined text-xl">edit</span>
+</button>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-white/[0.02] transition-colors group bg-primary/5">
+<td class="px-gutter py-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-variant flex items-center justify-center text-primary font-bold">ME</div>
+<div>
+<p class="text-on-surface font-semibold">María Estupiñán</p>
+<p class="text-on-surface-variant text-xs">m.estu&#64;logistic.co • 301 987 6543</p>
+</div>
+</div>
+</td>
+<td class="px-6 py-4">
+<div class="flex items-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-sm">location_on</span>
+<span class="">Ipiales, Nariño</span>
+</div>
+</td>
+<td class="px-6 py-4">
+<p class="text-on-surface text-sm">Ayer, 18:45</p>
+<p class="text-on-surface-variant text-xs">Ref: #MOV-88954</p>
+</td>
+<td class="px-6 py-4"><p class="text-on-surface font-medium">$850,400 <span class="text-[10px] text-on-surface-variant">COP</span></p>
+</td>
+<td class="px-6 py-4">
+<span class="px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">Activo</span>
+</td>
+<td class="px-gutter py-4 text-right">
+<div class="flex items-center justify-end gap-2">
+<button class="p-2 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-xl">history</span>
+</button>
+<button class="p-2 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-xl">edit</span>
+</button>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-white/[0.02] transition-colors group">
+<td class="px-gutter py-4">
+<div class="flex items-center gap-3 opacity-60">
+<div class="w-10 h-10 rounded-full bg-surface-variant flex items-center justify-center text-primary font-bold">JL</div>
+<div>
+<p class="text-on-surface font-semibold">Jorge Luna</p>
+<p class="text-on-surface-variant text-xs">j.luna&#64;gmail.com • 312 555 1234</p>
+</div>
+</div>
+</td>
+<td class="px-6 py-4">
+<div class="flex items-center gap-1.5 text-on-surface-variant opacity-60">
+<span class="material-symbols-outlined text-sm">location_on</span>
+<span class="">Tumaco, Nariño</span>
+</div>
+</td>
+<td class="px-6 py-4 opacity-60">
+<p class="text-on-surface text-sm">15 Mar, 2024</p>
+<p class="text-on-surface-variant text-xs">Ref: #MOV-87100</p>
+</td>
+<td class="px-6 py-4"><p class="text-on-surface font-medium opacity-60">$45,000 <span class="text-[10px] text-on-surface-variant">COP</span></p>
+</td>
+<td class="px-6 py-4">
+<span class="px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-white/5 text-on-surface-variant border border-white/10">Inactivo</span>
+</td>
+<td class="px-gutter py-4 text-right">
+<div class="flex items-center justify-end gap-2">
+<button class="p-2 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-xl">history</span>
+</button>
+<button class="p-2 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-xl">edit</span>
+</button>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-white/[0.02] transition-colors group">
+<td class="px-gutter py-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-variant flex items-center justify-center text-primary font-bold">AV</div>
+<div>
+<p class="text-on-surface font-semibold">Andrés Villarreal</p>
+<p class="text-on-surface-variant text-xs">andres.v&#64;outlook.com • 318 444 9988</p>
+</div>
+</div>
+</td>
+<td class="px-6 py-4">
+<div class="flex items-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-sm">location_on</span>
+<span class="">Pasto, Nariño</span>
+</div>
+</td>
+<td class="px-6 py-4">
+<p class="text-on-surface text-sm">Hoy, 09:12</p>
+<p class="text-on-surface-variant text-xs">Ref: #MOV-89112</p>
+</td>
+<td class="px-6 py-4"><p class="text-on-surface font-medium">$2,100,000 <span class="text-[10px] text-on-surface-variant">COP</span></p>
+</td>
+<td class="px-6 py-4">
+<span class="px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">Activo</span>
+</td>
+<td class="px-gutter py-4 text-right">
+<div class="flex items-center justify-end gap-2">
+<button class="p-2 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-xl">history</span>
+</button>
+<button class="p-2 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-xl">edit</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination Footer -->
+<div class="p-4 border-t border-white/5 bg-surface-container-low/20 flex justify-between items-center">
+<span class="text-xs text-on-surface-variant">Página 1 de 129</span>
+<div class="flex gap-2">
+<button class="px-4 py-2 rounded border border-white/10 text-xs hover:bg-white/5 transition-all">Anterior</button>
+<button class="px-4 py-2 rounded bg-white/10 text-xs hover:bg-white/20 transition-all">Siguiente</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Decorative background elements -->
+<div class="fixed top-0 right-0 -z-10 w-full h-full pointer-events-none overflow-hidden">
+<div class="absolute top-[-10%] right-[-10%] w-[50%] h-[50%] bg-primary/5 rounded-full blur-[120px]"></div>
+<div class="absolute bottom-[-5%] left-[-5%] w-[30%] h-[30%] bg-secondary/5 rounded-full blur-[100px]"></div>
+</div>
+</div>
